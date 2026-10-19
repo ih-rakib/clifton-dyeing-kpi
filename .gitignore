@@ -16,6 +16,10 @@ env/
 *.tmp
 ~$*.xlsx
 
+# Local one-click helper tools - kept on this PC, never published
+update.bat
+logout.bat
+
 # OS / editor
 Thumbs.db
 Desktop.ini
