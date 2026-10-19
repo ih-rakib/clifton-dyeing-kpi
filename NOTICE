@@ -1,0 +1,45 @@
+NOTICE
+======
+
+Dyeing & Finishing Performance Dashboard
+Copyright (c) 2026 Ikramul Hasan Rakib. All rights reserved.
+
+Author    : Ikramul Hasan Rakib
+Role      : Executive, Central IE Department, Clifton Group
+Portfolio : https://rakib-orion.vercel.app/
+Contact   : hasanrakib3590@gmail.com
+
+This product is licensed under the proprietary terms in the LICENSE file.
+Redistribution, modification or reuse of the original work is not permitted
+without prior written permission.
+
+
+Third-party components
+----------------------
+The dashboard incorporates the following third-party software. These remain
+under their own licenses; the copyright holder of this product claims no
+ownership over them, and their notices must be preserved.
+
+  * Apache ECharts  (dashboard/assets/vendor/echarts.min.js)
+      Copyright (c) 2017-2026 The Apache Software Foundation
+      Licensed under the Apache License, Version 2.0
+      https://github.com/apache/echarts  |  https://www.apache.org/licenses/LICENSE-2.0
+
+  * openpyxl  (used by scripts/build.py to read Excel workbooks)
+      Copyright (c) 2010-2026 openpyxl contributors / Charlie Clark
+      Licensed under the MIT License
+      https://openpyxl.readthedocs.io
+
+  * Python standard library and the web platform (HTML, CSS, JavaScript)
+      Used under their respective licenses; no additional restrictions imposed.
+
+
+Excluded material
+-----------------
+The following are NOT part of this licensed work and remain the property of
+their respective owners:
+
+  * DYEING PERFORMANCE OVERVIEW.xlsx
+  * FINISHING PERFORMANCE OVERVIEW.xlsx
+  * DYEING - SEPTEMBER 2026 - PERFORMANCE ANALYSIS REPORT.pptx
+  * Any other Clifton Group operational data, records or trademarks

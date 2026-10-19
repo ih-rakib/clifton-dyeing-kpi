@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------------------
+# Clifton Apparels Ltd. - Dyeing & Finishing Performance Dashboard
+# Author : Ikramul Hasan Rakib - Executive, Central IE Department, Clifton Group
+# (c) 2026 Ikramul Hasan Rakib. All rights reserved.
+# ---------------------------------------------------------------------------
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local runtime junk
+*.log
+*.tmp
+~$*.xlsx
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# The internal PowerPoint report is NOT part of the published website.
+# Delete the next line if you want to version the deck in the repo too.
+DYEING - SEPTEMBER 2026 - PERFORMANCE ANALYSIS REPORT.pptx

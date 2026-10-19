@@ -1,0 +1,87 @@
+PROPRIETARY LICENSE - ALL RIGHTS RESERVED
+=========================================
+
+Dyeing & Finishing Performance Dashboard
+Copyright (c) 2026 Ikramul Hasan Rakib. All rights reserved.
+
+  Author    : Ikramul Hasan Rakib
+  Role      : Executive, Central IE Department, Clifton Group
+  Portfolio : https://rakib-orion.vercel.app/
+  Contact   : hasanrakib3590@gmail.com
+
+This license governs the source code, design, documentation and generated data
+bundle of the Dyeing & Finishing Performance Dashboard (the "Software"),
+including but not limited to the files under `dashboard/` and `scripts/`, the
+ETL pipeline, the front-end application, stylesheets, and the build output.
+
+
+1. OWNERSHIP
+------------
+The Software is the original work of the copyright holder named above and is
+protected by copyright and other intellectual-property laws. All rights not
+expressly granted in this license are reserved by the copyright holder.
+
+
+2. NO LICENSE GRANTED
+---------------------
+No permission is granted to any person or organisation to use, copy, reproduce,
+modify, adapt, translate, merge, publish, distribute, sublicense, sell, rent,
+lease, transfer or otherwise exploit the Software, in whole or in part, by any
+means, without the prior written permission of the copyright holder.
+
+Nothing in this license shall be construed as granting, by implication,
+estoppel or otherwise, any right or title in the Software except as expressly
+stated herein.
+
+
+3. PERMITTED INTERNAL USE
+-------------------------
+Clifton Apparels Ltd. / Clifton Group is granted a non-exclusive, non-transferable
+right to use the Software internally for its own operational and reporting
+purposes. This right does not permit redistribution of the Software outside the
+organisation, nor its resale, sublicensing or publication.
+
+
+4. ATTRIBUTION MUST NOT BE REMOVED
+----------------------------------
+Author credits, copyright notices and portfolio links embedded in the Software
+(the user interface, source headers, metadata and generated data bundle) must
+not be removed, obscured or altered.
+
+
+5. THIRD-PARTY COMPONENTS
+-------------------------
+The Software incorporates or depends upon third-party components that remain
+under their own licenses. See the accompanying NOTICE file. Nothing in this
+license restricts rights granted to you directly by those third-party licenses.
+
+
+6. COMPANY DATA EXCLUDED
+------------------------
+This license covers the Software only. It does NOT cover the underlying business
+data, Excel workbooks, production records, the performance-analysis presentation,
+or any other Clifton Group material processed or displayed by the Software. Those
+remain the property of their respective owners.
+
+
+7. NO WARRANTY
+--------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, ACCURACY AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+8. TERMINATION
+--------------
+Any breach of this license automatically terminates the rights granted under
+Section 3, and the breaching party must cease all use of the Software and
+destroy all copies in its possession.
+
+
+-------------------------------------------------------------------------------
+For permission requests, licensing enquiries or collaboration, contact:
+Ikramul Hasan Rakib - hasanrakib3590@gmail.com - https://rakib-orion.vercel.app/
+-------------------------------------------------------------------------------
