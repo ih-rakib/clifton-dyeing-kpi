@@ -1,0 +1,11 @@
+# Normalise line endings: LF in the repository, CRLF for Windows batch files.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets - never normalise.
+*.xlsx binary
+*.pptx binary
+*.png binary
+*.jpg binary
+*.ico binary

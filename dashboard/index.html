@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!--
+  Clifton Apparels Ltd. - Dyeing & Finishing Performance Dashboard
+  Author  : Ikramul Hasan Rakib
+            Executive, Central IE Department, Clifton Group
+            https://rakib-orion.vercel.app/
+  (c) 2026 Ikramul Hasan Rakib. All rights reserved.
+  Proprietary license - see the LICENSE and NOTICE files in the project root.
+-->
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dyeing &amp; Finishing Performance · Clifton Apparels · by Ikramul Hasan Rakib</title>
+<meta name="description" content="Live performance intelligence for the Dyeing and Finishing departments of Clifton Apparels Ltd.">
+<meta name="author" content="Ikramul Hasan Rakib">
+<meta name="designer" content="Ikramul Hasan Rakib - Executive, Central IE Department, Clifton Group">
+<meta name="copyright" content="© 2026 Ikramul Hasan Rakib, Executive, Central IE Department, Clifton Group. All rights reserved.">
+<meta name="dcterms.rightsHolder" content="Ikramul Hasan Rakib">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧵</text></svg>">
+</head>
+<body>
+
+<!-- ======================= BOOT ======================= -->
+<div id="boot">
+  <div class="boot-inner">
+    <div class="spinner"></div>
+    <p>Loading performance data…</p>
+  </div>
+</div>
+
+<!-- ======================= TOP BAR ======================= -->
+<header class="topbar">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#04121c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2.7s6.5 6.2 6.5 11.2A6.5 6.5 0 0 1 12 20.4a6.5 6.5 0 0 1-6.5-6.5C5.5 8.9 12 2.7 12 2.7z"/>
+        <path d="M9.2 14.3a2.9 2.9 0 0 0 2.8 2.3"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Dyeing &amp; Finishing Performance</h1>
+      <p>Clifton Apparels Ltd. · Operations Intelligence</p>
+      <p class="brand-credit">Designed &amp; developed by <a class="author-link" href="https://rakib-orion.vercel.app/" target="_blank" rel="noopener noreferrer" title="Ikramul Hasan Rakib — portfolio">Ikramul Hasan Rakib</a> · Executive, Central IE Department, Clifton Group</p>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="control">
+      <label for="monthSelect">Period</label>
+      <select id="monthSelect" aria-label="Select reporting period"></select>
+    </div>
+
+    <div class="control">
+      <label>KPI method</label>
+      <div class="segmented" id="methodToggle" role="group" aria-label="KPI calculation method">
+        <button data-method="weighted" class="active" title="Aggregate plant totals before taking ratios (standard OEE practice)">Weighted</button>
+        <button data-method="report" title="Average shift-level ratios — matches the monthly PowerPoint deck">Report</button>
+      </div>
+    </div>
+
+    <div class="control">
+      <label>&nbsp;</label>
+      <div style="display:flex;gap:8px">
+        <button class="icon-btn" id="themeToggle" title="Toggle light / dark theme" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn" id="printBtn" title="Print / save as PDF" aria-label="Print dashboard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        </button>
+        <button class="btn" id="refreshBtn" title="Reload the latest data">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.5 9a9 9 0 0 1 14.9-3.4L23 10M1 14l4.6 4.4A9 9 0 0 0 20.5 15"/></svg>
+          Refresh
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ======================= TABS ======================= -->
+<nav class="tabs" id="tabs" role="tablist">
+  <button class="tab active" data-tab="overview" role="tab">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+    Overview
+  </button>
+  <button class="tab" data-tab="dyeing" role="tab">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6.5 6.2 6.5 11.2A6.5 6.5 0 0 1 12 20.4a6.5 6.5 0 0 1-6.5-6.5C5.5 8.9 12 2.7 12 2.7z"/></svg>
+    Dyeing
+  </button>
+  <button class="tab" data-tab="machines" role="tab">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+    Machines
+  </button>
+  <button class="tab" data-tab="downtime" role="tab">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+    Downtime
+  </button>
+  <button class="tab" data-tab="finishing" role="tab">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="7" cy="6" r="1.4"/><circle cx="17" cy="12" r="1.4"/><circle cx="10" cy="18" r="1.4"/></svg>
+    Finishing
+  </button>
+  <button class="tab" data-tab="mix" role="tab">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.2 15.9A10 10 0 1 1 8.1 2.8"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+    Production Mix
+  </button>
+  <button class="tab" data-tab="data" role="tab">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+    Data &amp; Method
+  </button>
+</nav>
+
+<main>
+
+  <!-- ================================================================
+       OVERVIEW
+       ================================================================ -->
+  <section class="tab-panel active" id="panel-overview">
+    <div class="page-head">
+      <div>
+        <h2>Executive Overview</h2>
+        <p id="ov-period-line">—</p>
+      </div>
+      <div class="meta-pills" id="ov-meta"></div>
+    </div>
+
+    <div class="grid g-4" id="ov-kpis"></div>
+
+    <div class="grid g-2-1 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Performance commentary</h3>
+            <p>Automatically generated from the current source data</p>
+          </div>
+        </div>
+        <div class="summary-text" id="ov-summary"></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Target scorecard</h3>
+            <p>Selected period against site targets</p>
+          </div>
+        </div>
+        <div id="ov-scorecard" style="padding-bottom:8px"></div>
+      </div>
+    </div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>OEE performance trend</h3>
+            <p>Availability · Performance · Quality · OEE by month</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="ov-trend"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Production vs target</h3>
+            <p>Monthly output, goal and target-hit rate</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="ov-prod"></div></div>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <div class="card-head">
+        <div>
+          <h3>Month-by-month scorecard</h3>
+          <p>Complete operating history captured in the source workbook</p>
+        </div>
+      </div>
+      <div class="table-wrap" id="ov-table"></div>
+    </div>
+
+    <div class="grid g-3 mt" id="ov-insights"></div>
+  </section>
+
+  <!-- ================================================================
+       DYEING
+       ================================================================ -->
+  <section class="tab-panel" id="panel-dyeing">
+    <div class="page-head">
+      <div>
+        <h2>Dyeing Performance</h2>
+        <p id="dy-period-line">—</p>
+      </div>
+      <div class="meta-pills" id="dy-meta"></div>
+    </div>
+
+    <div class="grid g-4" id="dy-kpis"></div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>OEE decomposition</h3>
+            <p>Availability × Performance × Quality for the selected month</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dy-oee-waterfall"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Output vs capacity</h3>
+            <p>Actual output, loading capacity and planned output</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dy-output"></div></div>
+      </div>
+    </div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Time utilisation</h3>
+            <p>Available, operating and lost machine hours</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dy-hours"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Quality &amp; first-time-right</h3>
+            <p>Quality %, RFT % and rework against limits</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dy-quality"></div></div>
+      </div>
+    </div>
+
+    <div class="grid g-2-1 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Daily output</h3>
+            <p>Production per production day with rolling average</p>
+          </div>
+          <div class="head-right"><span class="pill info" id="dy-daily-pill">—</span></div>
+        </div>
+        <div class="chart-body"><div class="chart lg" id="dy-daily"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Shift comparison</h3>
+            <p>Shift A vs Shift B for the selected month</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart lg" id="dy-shift"></div></div>
+      </div>
+    </div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Right-first-time by batch type</h3>
+            <p>Bulk-to-bulk vs lab-to-bulk pass rates</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dy-rft"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Rework rates</h3>
+            <p>Topping and redyeing as a share of planned output</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dy-rework"></div></div>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <div class="card-head">
+        <div>
+          <h3>Monthly detail</h3>
+          <p>Full KPI history — all months in the workbook</p>
+        </div>
+      </div>
+      <div class="table-wrap" id="dy-table"></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       MACHINES
+       ================================================================ -->
+  <section class="tab-panel" id="panel-machines">
+    <div class="page-head">
+      <div>
+        <h2>Machine Performance</h2>
+        <p id="mc-period-line">—</p>
+      </div>
+      <div class="meta-pills" id="mc-meta"></div>
+    </div>
+
+    <div class="grid g-4" id="mc-kpis"></div>
+
+    <div class="grid g-2-1 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>OEE ranking</h3>
+            <p>Dyeing machines ranked by OEE for the selected month</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart xl" id="mc-rank"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Performance vs availability</h3>
+            <p>Bubble size = production volume</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart xl" id="mc-scatter"></div></div>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <div class="card-head">
+        <div>
+          <h3>Machine scorecard</h3>
+          <p>Click any column header to sort. Values are for the selected month.</p>
+        </div>
+      </div>
+      <div class="table-wrap" id="mc-table"></div>
+    </div>
+
+    <div class="card mt">
+      <div class="card-head">
+        <div>
+          <h3>OEE heatmap</h3>
+          <p>Machine × production day — darker cells indicate weaker performance</p>
+        </div>
+      </div>
+      <div class="chart-body"><div class="chart lg" id="mc-heatmap"></div></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       DOWNTIME
+       ================================================================ -->
+  <section class="tab-panel" id="panel-downtime">
+    <div class="page-head">
+      <div>
+        <h2>Downtime &amp; Loss Analysis</h2>
+        <p id="dt-period-line">—</p>
+      </div>
+      <div class="meta-pills" id="dt-meta"></div>
+    </div>
+
+    <div class="grid g-4" id="dt-kpis"></div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Downtime Pareto</h3>
+            <p>Loss hours by root-cause category with cumulative share</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dt-pareto"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Loss time mix</h3>
+            <p>Share of total downtime hours</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dt-donut"></div></div>
+      </div>
+    </div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Loss hours by machine</h3>
+            <p>Where downtime accumulated in the selected month</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dt-machine"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Monthly downtime trend</h3>
+            <p>Stacked loss hours by category</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="dt-trend"></div></div>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <div class="card-head">
+        <div>
+          <h3>Top recorded delay reasons</h3>
+          <p>Free-text log entries ranked by loss hours</p>
+        </div>
+      </div>
+      <div class="table-wrap" id="dt-reasons"></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FINISHING
+       ================================================================ -->
+  <section class="tab-panel" id="panel-finishing">
+    <div class="page-head">
+      <div>
+        <h2>Finishing Performance</h2>
+        <p id="fn-period-line">—</p>
+      </div>
+      <div class="meta-pills" id="fn-meta"></div>
+    </div>
+
+    <div class="grid g-3" id="fn-kpis"></div>
+
+    <div class="grid g-2-1 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Machine-wise OEE</h3>
+            <p>Utilisation × efficiency × quality for the selected month</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart lg" id="fn-rank"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Open vs tube fabric</h3>
+            <p>Throughput split by fabric family</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart lg" id="fn-fabric"></div></div>
+      </div>
+    </div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Finished goods output</h3>
+            <p>Daily finished production versus dyeing unload</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="fn-daily"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Finishing downtime</h3>
+            <p>Downtime hours by machine</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="fn-downtime"></div></div>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <div class="card-head">
+        <div>
+          <h3>Finishing machine scorecard</h3>
+          <p>Utilisation, efficiency, quality and OEE</p>
+        </div>
+      </div>
+      <div class="table-wrap" id="fn-table"></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       MIX
+       ================================================================ -->
+  <section class="tab-panel" id="panel-mix">
+    <div class="page-head">
+      <div>
+        <h2>Production Mix</h2>
+        <p id="mx-period-line">—</p>
+      </div>
+      <div class="meta-pills" id="mx-meta"></div>
+    </div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Top buyers</h3>
+            <p>Production volume by buyer</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart lg" id="mx-buyer"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Fabric construction</h3>
+            <p>Volume share by fabric type</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart lg" id="mx-fabric"></div></div>
+      </div>
+    </div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Colour depth</h3>
+            <p>Volume share by colour type</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="mx-color"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>GSM &amp; width profile</h3>
+            <p>Volume split by GSM band and fabric form</p>
+          </div>
+        </div>
+        <div class="chart-body"><div class="chart" id="mx-gsm"></div></div>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <div class="card-head">
+        <div>
+          <h3>Buyer detail</h3>
+          <p>All buyers for the selected month</p>
+        </div>
+      </div>
+      <div class="table-wrap" id="mx-table"></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       DATA & METHOD
+       ================================================================ -->
+  <section class="tab-panel" id="panel-data">
+    <div class="page-head">
+      <div>
+        <h2>Data &amp; Methodology</h2>
+        <p>Source coverage, KPI definitions, targets and authorship</p>
+      </div>
+      <div class="meta-pills" id="dq-meta"></div>
+    </div>
+
+    <div class="grid g-3" id="dq-kpis"></div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>How each KPI is calculated</h3>
+            <p>Formulas applied by the data pipeline</p>
+          </div>
+        </div>
+        <div class="def-list" id="dq-defs"></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Targets &amp; thresholds</h3>
+            <p>Values used across the dashboard</p>
+          </div>
+        </div>
+        <div class="def-list" id="dq-targets"></div>
+      </div>
+    </div>
+
+    <div class="grid g-2 mt">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Dyeing data coverage</h3>
+            <p>Records and production days per month</p>
+          </div>
+        </div>
+        <div class="table-wrap" id="dq-dyeing-coverage"></div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h3>Finishing data coverage</h3>
+            <p>Records and production days per month</p>
+          </div>
+        </div>
+        <div class="table-wrap" id="dq-finishing-coverage"></div>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <div class="card-head">
+        <div>
+          <h3>Author &amp; credits</h3>
+          <p>Design, data engineering and analysis</p>
+        </div>
+      </div>
+      <div class="def-list" id="dq-author">
+        <div class="def-row"><div class="k">Author</div><div class="v"><b><a class="author-link" href="https://rakib-orion.vercel.app/" target="_blank" rel="noopener noreferrer">Ikramul Hasan Rakib</a></b></div></div>
+        <div class="def-row"><div class="k">Role</div><div class="v">Executive, Central IE Department</div></div>
+        <div class="def-row"><div class="k">Organisation</div><div class="v">Clifton Group</div></div>
+        <div class="def-row"><div class="k">Portfolio</div><div class="v"><a class="author-link" href="https://rakib-orion.vercel.app/" target="_blank" rel="noopener noreferrer">rakib-orion.vercel.app</a></div></div>
+        <div class="def-row"><div class="k">Scope</div><div class="v">Dashboard design, ETL pipeline and performance analysis</div></div>
+        <div class="def-row"><div class="k">License</div><div class="v">Proprietary &mdash; All rights reserved (see <code>LICENSE</code>)</div></div>
+        <div class="def-row"><div class="k">Copyright</div><div class="v">&copy; 2026 <a class="author-link" href="https://rakib-orion.vercel.app/" target="_blank" rel="noopener noreferrer">Ikramul Hasan Rakib</a>. All rights reserved.</div></div>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <div class="card-head">
+        <div>
+          <h3>Refresh &amp; deployment</h3>
+          <p>How this dashboard stays in sync with the workbooks</p>
+        </div>
+      </div>
+      <div class="card-pad" id="dq-refresh"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div>
+    <b>Clifton Apparels Ltd.</b> · Dyeing &amp; Finishing Performance Dashboard
+    <span class="foot-author">Designed &amp; developed by <a class="author-link" href="https://rakib-orion.vercel.app/" target="_blank" rel="noopener noreferrer" title="Ikramul Hasan Rakib — portfolio">Ikramul Hasan Rakib</a> — Executive, Central IE Department, Clifton Group. &copy; <a class="author-link" href="https://rakib-orion.vercel.app/" target="_blank" rel="noopener noreferrer">2026 Ikramul Hasan Rakib</a>. All rights reserved.</span>
+  </div>
+  <div id="foot-meta">—</div>
+</footer>
+
+<!-- ======================= SCRIPTS ======================= -->
+<script src="assets/vendor/echarts.min.js"></script>
+<script src="data/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

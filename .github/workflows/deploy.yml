@@ -1,0 +1,74 @@
+# Build & Deploy Dashboard
+#
+# Rebuilds the dashboard data bundle from the Excel workbooks and publishes
+# the site to GitHub Pages.
+#
+# Runs ONLY when you push to `main` (or when you click "Run workflow").
+# It does NOT run on a schedule and does NOT create GitHub Releases.
+#
+# (c) 2026 Ikramul Hasan Rakib - Executive, Central IE Department, Clifton Group
+
+name: Build & Deploy Dashboard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.xlsx"
+      - "scripts/**"
+      - "dashboard/**"
+      - "requirements.txt"
+      - ".github/workflows/deploy.yml"
+  # Lets you trigger a rebuild manually from the Actions tab.
+  workflow_dispatch:
+
+# Allow the workflow to publish to GitHub Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deployment at a time; a newer push supersedes an in-flight one.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build data & upload site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build dashboard data from the workbooks
+        run: python scripts/build.py
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

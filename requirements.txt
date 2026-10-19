@@ -1,0 +1,10 @@
+# Clifton Apparels Ltd. - Dyeing & Finishing Performance Dashboard
+# Author : Ikramul Hasan Rakib - Executive, Central IE Department, Clifton Group
+# (c) 2026 Ikramul Hasan Rakib. All rights reserved.
+#
+# Runtime dependencies for the ETL builder (scripts/build.py).
+#
+# The dashboard front-end itself is fully static (HTML/CSS/JS) and needs
+# no packages; only the Python data pipeline reads the Excel workbooks.
+
+openpyxl>=3.1,<4
