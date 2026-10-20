@@ -6,8 +6,8 @@
   "authorRole": "Executive, Central IE Department, Clifton Group",
   "portfolio": "https://rakib-orion.vercel.app/",
   "copyright": "© 2026 Ikramul Hasan Rakib. All rights reserved.",
-  "generatedAt": "2026-10-19T09:00:33+06:00",
-  "generatedAtDisplay": "19 Oct 2026, 09:00",
+  "generatedAt": "2026-10-20T08:26:50+06:00",
+  "generatedAtDisplay": "20 Oct 2026, 08:26",
   "sourceFiles": [
    "DYEING PERFORMANCE OVERVIEW.xlsx",
    "FINISHING PERFORMANCE OVERVIEW.xlsx"
@@ -73,7 +73,7 @@
   "latestMonth": "2026-10",
   "latestCompleteMonth": "2026-09",
   "dateMin": "2026-03-01",
-  "dateMax": "2026-10-15",
+  "dateMax": "2026-10-17",
   "standardWorkingDays": 26,
   "currency": "BDT"
  },
@@ -130,7 +130,7 @@
     "hitRate": 69.68,
     "capacityUtil": 92.18,
     "toppingPct": 1.95,
-    "redyeingPct": 0.31,
+    "redyeingPct": 0.32,
     "reworkPct": 2.26,
     "goal": 468000,
     "proratedGoal": 360000.0,
@@ -172,7 +172,7 @@
     "hitRate": 95.26,
     "capacityUtil": 91.62,
     "toppingPct": 3.04,
-    "redyeingPct": 0.58,
+    "redyeingPct": 0.59,
     "reworkPct": 3.62,
     "goal": 468000,
     "proratedGoal": 504000.0,
@@ -214,7 +214,7 @@
     "hitRate": 77.79,
     "capacityUtil": 90.26,
     "toppingPct": 2.99,
-    "redyeingPct": 0.68,
+    "redyeingPct": 0.71,
     "reworkPct": 3.67,
     "goal": 468000,
     "proratedGoal": 414000.0,
@@ -298,7 +298,7 @@
     "hitRate": 97.89,
     "capacityUtil": 91.77,
     "toppingPct": 1.77,
-    "redyeingPct": 0.45,
+    "redyeingPct": 0.46,
     "reworkPct": 2.23,
     "goal": 468000,
     "proratedGoal": 468000.0,
@@ -340,7 +340,7 @@
     "hitRate": 85.77,
     "capacityUtil": 89.7,
     "toppingPct": 3.8,
-    "redyeingPct": 0.35,
+    "redyeingPct": 0.36,
     "reworkPct": 4.15,
     "goal": 468000,
     "proratedGoal": 450000.0,
@@ -382,7 +382,7 @@
     "hitRate": 90.93,
     "capacityUtil": 90.14,
     "toppingPct": 4.24,
-    "redyeingPct": 0.57,
+    "redyeingPct": 0.59,
     "reworkPct": 4.81,
     "goal": 468000,
     "proratedGoal": 468000.0,
@@ -401,40 +401,40 @@
     "year": 2026,
     "month": 10,
     "partial": true,
-    "workingDays": 13,
+    "workingDays": 14,
     "activeMachines": 21,
-    "records": 1053,
-    "sampleRecords": 149,
-    "workingHours": 6552.0,
-    "operatingHours": 6501.0,
-    "lossHours": 51.0,
-    "production": 217767.41,
-    "bulkProduction": 216558.9,
-    "sampleProduction": 1208.51,
-    "plannedOutput": 226059.99,
-    "loadingCapacity": 242079.5,
-    "qualityPass": 217335.68,
-    "topping": 8724.31,
+    "records": 1128,
+    "sampleRecords": 159,
+    "workingHours": 7056.0,
+    "operatingHours": 6985.5,
+    "lossHours": 70.5,
+    "production": 233859.71,
+    "bulkProduction": 232622.6,
+    "sampleProduction": 1237.11,
+    "plannedOutput": 242211.69,
+    "loadingCapacity": 259518.5,
+    "qualityPass": 233461.38,
+    "topping": 8750.31,
     "redyeing": 2885.63,
-    "lossKg": 2006.35,
-    "availability": 99.22,
-    "performance": 89.96,
-    "quality": 96.14,
-    "oee": 85.81,
-    "hitRate": 46.53,
-    "capacityUtil": 89.96,
-    "toppingPct": 3.86,
-    "redyeingPct": 1.28,
-    "reworkPct": 5.14,
+    "lossKg": 2835.1,
+    "availability": 99.0,
+    "performance": 90.11,
+    "quality": 96.39,
+    "oee": 85.99,
+    "hitRate": 49.97,
+    "capacityUtil": 90.11,
+    "toppingPct": 3.61,
+    "redyeingPct": 1.23,
+    "reworkPct": 4.8,
     "goal": 468000,
-    "proratedGoal": 234000.0,
-    "hitRateProrated": 93.06,
-    "avgDailyOutput": 16751.3,
-    "avgDailyLossKg": 154.3,
-    "performanceReport": 84.88,
-    "oeeReport": 82.8,
-    "availabilityReport": 99.22,
-    "qualityReport": 95.06
+    "proratedGoal": 252000.0,
+    "hitRateProrated": 92.8,
+    "avgDailyOutput": 16704.3,
+    "avgDailyLossKg": 202.5,
+    "performanceReport": 84.91,
+    "oeeReport": 82.86,
+    "availabilityReport": 99.0,
+    "qualityReport": 95.25
    }
   ],
   "daily": [
@@ -3599,449 +3599,466 @@
     "hitRate": 97.37,
     "records": 78,
     "oee": 88.01
+   },
+   {
+    "date": "2026-10-17",
+    "month": "2026-10",
+    "production": 16092.3,
+    "plannedOutput": 16151.7,
+    "loadingCapacity": 17439.0,
+    "workingHours": 504.0,
+    "operatingHours": 484.5,
+    "lossHours": 19.5,
+    "lossKg": 828.8,
+    "availability": 96.13,
+    "performance": 92.28,
+    "quality": 99.84,
+    "hitRate": 99.63,
+    "records": 75,
+    "oee": 88.57
    }
   ],
   "machines": [
    {
     "machine": "Mc-15",
     "isSample": false,
-    "production": 328885.8,
-    "loadingCapacity": 330920.0,
-    "plannedOutput": 331741.3,
-    "workingHours": 4420.0,
-    "operatingHours": 4321.4,
-    "lossHours": 98.6,
-    "qualityPass": 326833.4,
+    "production": 329669.8,
+    "loadingCapacity": 331700.0,
+    "plannedOutput": 332525.3,
+    "workingHours": 4444.0,
+    "operatingHours": 4344.4,
+    "lossHours": 99.6,
+    "qualityPass": 327617.4,
     "topping": 4907.9,
     "redyeing": 718.0,
-    "availability": 97.77,
+    "availability": 97.76,
     "performance": 99.39,
     "quality": 98.52,
     "oee": 95.73,
     "hitRate": 99.14,
-    "records": 545,
-    "daysActive": 186,
-    "avgDailyOutput": 1768.2
+    "records": 547,
+    "daysActive": 187,
+    "avgDailyOutput": 1762.9
    },
    {
     "machine": "Mc-8",
     "isSample": false,
-    "production": 371702.1,
-    "loadingCapacity": 398353.0,
-    "plannedOutput": 372102.1,
-    "workingHours": 4412.0,
-    "operatingHours": 4370.1,
+    "production": 374093.1,
+    "loadingCapacity": 400923.0,
+    "plannedOutput": 374493.1,
+    "workingHours": 4436.0,
+    "operatingHours": 4394.1,
     "lossHours": 41.9,
-    "qualityPass": 372102.1,
+    "qualityPass": 374493.1,
     "topping": 0.0,
     "redyeing": 491.5,
-    "availability": 99.05,
+    "availability": 99.06,
     "performance": 93.31,
     "quality": 100.0,
-    "oee": 92.42,
+    "oee": 92.43,
     "hitRate": 99.89,
-    "records": 1054,
-    "daysActive": 186,
-    "avgDailyOutput": 1998.4
+    "records": 1063,
+    "daysActive": 187,
+    "avgDailyOutput": 2000.5
    },
    {
     "machine": "Mc-22",
     "isSample": false,
-    "production": 312190.4,
-    "loadingCapacity": 338299.0,
-    "plannedOutput": 313256.2,
-    "workingHours": 4424.0,
-    "operatingHours": 4343.9,
-    "lossHours": 80.1,
-    "qualityPass": 311539.0,
+    "production": 313332.8,
+    "loadingCapacity": 339479.0,
+    "plannedOutput": 314398.6,
+    "workingHours": 4448.0,
+    "operatingHours": 4366.9,
+    "lossHours": 81.1,
+    "qualityPass": 312681.4,
     "topping": 1717.2,
     "redyeing": 502.0,
-    "availability": 98.19,
-    "performance": 92.28,
+    "availability": 98.18,
+    "performance": 92.3,
     "quality": 99.45,
-    "oee": 90.11,
+    "oee": 90.12,
     "hitRate": 99.66,
-    "records": 928,
-    "daysActive": 184,
-    "avgDailyOutput": 1696.7
+    "records": 932,
+    "daysActive": 185,
+    "avgDailyOutput": 1693.7
    },
    {
     "machine": "Mc-5",
     "isSample": false,
-    "production": 330827.7,
-    "loadingCapacity": 368400.0,
-    "plannedOutput": 330901.0,
-    "workingHours": 4400.0,
-    "operatingHours": 4315.5,
+    "production": 332871.1,
+    "loadingCapacity": 370875.0,
+    "plannedOutput": 332944.4,
+    "workingHours": 4424.0,
+    "operatingHours": 4339.5,
     "lossHours": 84.5,
-    "qualityPass": 330901.0,
+    "qualityPass": 332944.4,
     "topping": 0.0,
     "redyeing": 0.0,
-    "availability": 98.08,
-    "performance": 89.8,
+    "availability": 98.09,
+    "performance": 89.75,
     "quality": 100.0,
-    "oee": 88.08,
+    "oee": 88.04,
     "hitRate": 99.98,
-    "records": 1053,
-    "daysActive": 186,
-    "avgDailyOutput": 1778.6
+    "records": 1060,
+    "daysActive": 187,
+    "avgDailyOutput": 1780.1
    },
    {
     "machine": "Mc-6",
     "isSample": false,
-    "production": 235572.7,
-    "loadingCapacity": 253788.0,
-    "plannedOutput": 242605.4,
-    "workingHours": 4424.0,
-    "operatingHours": 4357.8,
-    "lossHours": 65.9,
-    "qualityPass": 232774.0,
+    "production": 236373.7,
+    "loadingCapacity": 254613.0,
+    "plannedOutput": 243406.4,
+    "workingHours": 4448.0,
+    "operatingHours": 4379.8,
+    "lossHours": 67.9,
+    "qualityPass": 233575.0,
     "topping": 9831.4,
     "redyeing": 0.0,
-    "availability": 98.5,
-    "performance": 92.82,
-    "quality": 95.95,
-    "oee": 87.73,
-    "hitRate": 97.1,
-    "records": 559,
-    "daysActive": 183,
-    "avgDailyOutput": 1287.3
+    "availability": 98.47,
+    "performance": 92.84,
+    "quality": 95.96,
+    "oee": 87.72,
+    "hitRate": 97.11,
+    "records": 561,
+    "daysActive": 184,
+    "avgDailyOutput": 1284.6
    },
    {
     "machine": "Mc-16",
     "isSample": false,
-    "production": 303861.6,
-    "loadingCapacity": 322460.0,
-    "plannedOutput": 321994.8,
-    "workingHours": 4388.0,
-    "operatingHours": 4299.2,
+    "production": 305977.6,
+    "loadingCapacity": 324560.0,
+    "plannedOutput": 324110.8,
+    "workingHours": 4412.0,
+    "operatingHours": 4323.2,
     "lossHours": 88.8,
-    "qualityPass": 304786.4,
+    "qualityPass": 306902.4,
     "topping": 17208.4,
     "redyeing": 0.0,
-    "availability": 97.98,
-    "performance": 94.23,
-    "quality": 94.66,
-    "oee": 87.39,
-    "hitRate": 94.37,
-    "records": 508,
-    "daysActive": 184,
-    "avgDailyOutput": 1651.4
+    "availability": 97.99,
+    "performance": 94.27,
+    "quality": 94.69,
+    "oee": 87.47,
+    "hitRate": 94.41,
+    "records": 510,
+    "daysActive": 185,
+    "avgDailyOutput": 1653.9
    },
    {
     "machine": "Mc-23",
     "isSample": false,
-    "production": 75249.2,
-    "loadingCapacity": 82704.0,
-    "plannedOutput": 76364.5,
-    "workingHours": 4352.0,
-    "operatingHours": 4131.9,
+    "production": 75674.8,
+    "loadingCapacity": 83214.0,
+    "plannedOutput": 76790.2,
+    "workingHours": 4376.0,
+    "operatingHours": 4155.9,
     "lossHours": 229.4,
-    "qualityPass": 75706.8,
+    "qualityPass": 76132.5,
     "topping": 657.7,
     "redyeing": 479.0,
-    "availability": 94.94,
-    "performance": 90.99,
+    "availability": 94.97,
+    "performance": 90.94,
     "quality": 99.14,
-    "oee": 85.64,
-    "hitRate": 98.54,
-    "records": 681,
-    "daysActive": 183,
-    "avgDailyOutput": 411.2
+    "oee": 85.63,
+    "hitRate": 98.55,
+    "records": 685,
+    "daysActive": 184,
+    "avgDailyOutput": 411.3
    },
    {
     "machine": "Mc-7",
     "isSample": false,
-    "production": 320890.3,
-    "loadingCapacity": 352920.0,
-    "plannedOutput": 334785.1,
-    "workingHours": 4424.0,
-    "operatingHours": 4341.4,
-    "lossHours": 82.6,
-    "qualityPass": 317969.3,
+    "production": 322905.3,
+    "loadingCapacity": 354960.0,
+    "plannedOutput": 336800.1,
+    "workingHours": 4448.0,
+    "operatingHours": 4361.9,
+    "lossHours": 86.1,
+    "qualityPass": 319984.3,
     "topping": 16815.8,
     "redyeing": 1684.0,
-    "availability": 98.13,
-    "performance": 90.92,
-    "quality": 94.98,
-    "oee": 84.74,
-    "hitRate": 95.85,
-    "records": 516,
-    "daysActive": 184,
-    "avgDailyOutput": 1744.0
-   },
-   {
-    "machine": "Mc-21",
-    "isSample": false,
-    "production": 55362.4,
-    "loadingCapacity": 62590.0,
-    "plannedOutput": 56817.7,
-    "workingHours": 4424.0,
-    "operatingHours": 4256.3,
-    "lossHours": 167.7,
-    "qualityPass": 55642.7,
-    "topping": 1175.0,
-    "redyeing": 1882.3,
-    "availability": 96.21,
-    "performance": 88.45,
-    "quality": 97.93,
-    "oee": 83.34,
-    "hitRate": 97.44,
-    "records": 601,
-    "daysActive": 182,
-    "avgDailyOutput": 304.2
+    "availability": 98.06,
+    "performance": 90.97,
+    "quality": 95.01,
+    "oee": 84.75,
+    "hitRate": 95.87,
+    "records": 520,
+    "daysActive": 185,
+    "avgDailyOutput": 1745.4
    },
    {
     "machine": "Mc-20",
     "isSample": false,
-    "production": 181860.9,
-    "loadingCapacity": 209354.0,
-    "plannedOutput": 185010.3,
-    "workingHours": 4436.0,
-    "operatingHours": 4387.8,
+    "production": 182415.9,
+    "loadingCapacity": 209984.0,
+    "plannedOutput": 185565.3,
+    "workingHours": 4460.0,
+    "operatingHours": 4411.8,
     "lossHours": 48.2,
-    "qualityPass": 179367.9,
+    "qualityPass": 179922.9,
     "topping": 5642.4,
     "redyeing": 481.0,
-    "availability": 98.91,
+    "availability": 98.92,
     "performance": 86.87,
-    "quality": 96.95,
-    "oee": 83.3,
+    "quality": 96.96,
+    "oee": 83.32,
     "hitRate": 98.3,
-    "records": 527,
+    "records": 530,
+    "daysActive": 184,
+    "avgDailyOutput": 991.4
+   },
+   {
+    "machine": "Mc-21",
+    "isSample": false,
+    "production": 55657.1,
+    "loadingCapacity": 62930.0,
+    "plannedOutput": 57112.4,
+    "workingHours": 4448.0,
+    "operatingHours": 4269.3,
+    "lossHours": 178.7,
+    "qualityPass": 55937.4,
+    "topping": 1175.0,
+    "redyeing": 1882.3,
+    "availability": 95.98,
+    "performance": 88.44,
+    "quality": 97.94,
+    "oee": 83.14,
+    "hitRate": 97.45,
+    "records": 604,
     "daysActive": 183,
-    "avgDailyOutput": 993.8
+    "avgDailyOutput": 304.1
    },
    {
     "machine": "Mc-19",
     "isSample": false,
-    "production": 104590.6,
-    "loadingCapacity": 117400.0,
-    "plannedOutput": 110016.1,
-    "workingHours": 4444.0,
-    "operatingHours": 4404.5,
+    "production": 105199.2,
+    "loadingCapacity": 118080.0,
+    "plannedOutput": 110624.7,
+    "workingHours": 4468.0,
+    "operatingHours": 4428.5,
     "lossHours": 39.5,
-    "qualityPass": 103040.8,
+    "qualityPass": 103649.4,
     "topping": 6975.2,
     "redyeing": 2421.6,
-    "availability": 99.11,
+    "availability": 99.12,
     "performance": 89.09,
-    "quality": 93.66,
-    "oee": 82.7,
-    "hitRate": 95.07,
-    "records": 475,
-    "daysActive": 183,
-    "avgDailyOutput": 571.5
+    "quality": 93.69,
+    "oee": 82.74,
+    "hitRate": 95.1,
+    "records": 477,
+    "daysActive": 184,
+    "avgDailyOutput": 571.7
    },
    {
     "machine": "Mc-24",
     "isSample": false,
-    "production": 42747.8,
-    "loadingCapacity": 49682.0,
-    "plannedOutput": 45277.4,
-    "workingHours": 4424.0,
-    "operatingHours": 4324.9,
+    "production": 43082.1,
+    "loadingCapacity": 50022.0,
+    "plannedOutput": 45611.6,
+    "workingHours": 4448.0,
+    "operatingHours": 4348.9,
     "lossHours": 99.1,
-    "qualityPass": 42547.0,
+    "qualityPass": 42881.2,
     "topping": 2730.4,
     "redyeing": 2258.9,
-    "availability": 97.76,
-    "performance": 86.04,
-    "quality": 93.97,
-    "oee": 79.04,
-    "hitRate": 94.41,
-    "records": 485,
-    "daysActive": 181,
-    "avgDailyOutput": 236.2
+    "availability": 97.77,
+    "performance": 86.13,
+    "quality": 94.01,
+    "oee": 79.17,
+    "hitRate": 94.45,
+    "records": 487,
+    "daysActive": 182,
+    "avgDailyOutput": 236.7
    },
    {
     "machine": "Mc-17",
     "isSample": false,
-    "production": 191181.8,
-    "loadingCapacity": 228518.0,
-    "plannedOutput": 198406.9,
-    "workingHours": 4480.0,
-    "operatingHours": 4439.2,
-    "lossHours": 47.8,
-    "qualityPass": 188725.5,
+    "production": 192576.8,
+    "loadingCapacity": 230048.0,
+    "plannedOutput": 199801.9,
+    "workingHours": 4504.0,
+    "operatingHours": 4462.2,
+    "lossHours": 48.8,
+    "qualityPass": 190120.5,
     "topping": 9681.4,
     "redyeing": 0.0,
-    "availability": 99.09,
-    "performance": 83.66,
-    "quality": 95.12,
-    "oee": 78.85,
-    "hitRate": 96.36,
-    "records": 531,
-    "daysActive": 182,
-    "avgDailyOutput": 1050.4
-   },
-   {
-    "machine": "Mc-13",
-    "isSample": false,
-    "production": 10287.3,
-    "loadingCapacity": 12297.0,
-    "plannedOutput": 11110.1,
-    "workingHours": 4396.0,
-    "operatingHours": 4226.7,
-    "lossHours": 169.3,
-    "qualityPass": 10675.5,
-    "topping": 434.6,
-    "redyeing": 579.9,
-    "availability": 96.15,
-    "performance": 83.66,
-    "quality": 96.09,
-    "oee": 77.29,
-    "hitRate": 92.59,
-    "records": 466,
-    "daysActive": 176,
-    "avgDailyOutput": 58.5
+    "availability": 99.07,
+    "performance": 83.71,
+    "quality": 95.15,
+    "oee": 78.92,
+    "hitRate": 96.38,
+    "records": 534,
+    "daysActive": 183,
+    "avgDailyOutput": 1052.3
    },
    {
     "machine": "Mc-18",
     "isSample": false,
-    "production": 43754.0,
-    "loadingCapacity": 52434.0,
-    "plannedOutput": 47630.4,
-    "workingHours": 4396.0,
-    "operatingHours": 4311.9,
+    "production": 44088.5,
+    "loadingCapacity": 52774.0,
+    "plannedOutput": 47964.9,
+    "workingHours": 4420.0,
+    "operatingHours": 4335.9,
     "lossHours": 84.1,
-    "qualityPass": 44854.8,
+    "qualityPass": 45189.3,
     "topping": 2775.6,
     "redyeing": 1189.9,
-    "availability": 98.09,
-    "performance": 83.45,
-    "quality": 94.17,
-    "oee": 77.08,
-    "hitRate": 91.86,
-    "records": 513,
+    "availability": 98.1,
+    "performance": 83.54,
+    "quality": 94.21,
+    "oee": 77.21,
+    "hitRate": 91.92,
+    "records": 515,
+    "daysActive": 178,
+    "avgDailyOutput": 247.7
+   },
+   {
+    "machine": "Mc-13",
+    "isSample": false,
+    "production": 10307.4,
+    "loadingCapacity": 12372.0,
+    "plannedOutput": 11163.6,
+    "workingHours": 4420.0,
+    "operatingHours": 4250.7,
+    "lossHours": 169.3,
+    "qualityPass": 10729.0,
+    "topping": 434.6,
+    "redyeing": 579.9,
+    "availability": 96.17,
+    "performance": 83.31,
+    "quality": 96.11,
+    "oee": 77.0,
+    "hitRate": 92.33,
+    "records": 469,
     "daysActive": 177,
-    "avgDailyOutput": 247.2
+    "avgDailyOutput": 58.2
    },
    {
     "machine": "Mc-10",
     "isSample": false,
-    "production": 45739.3,
-    "loadingCapacity": 56605.7,
-    "plannedOutput": 50494.7,
-    "workingHours": 4400.0,
-    "operatingHours": 4314.7,
+    "production": 46024.1,
+    "loadingCapacity": 56935.7,
+    "plannedOutput": 50779.5,
+    "workingHours": 4424.0,
+    "operatingHours": 4338.7,
     "lossHours": 85.3,
-    "qualityPass": 45389.7,
+    "qualityPass": 45674.5,
     "topping": 5105.0,
     "redyeing": 558.5,
-    "availability": 98.06,
-    "performance": 80.8,
-    "quality": 89.89,
-    "oee": 71.23,
-    "hitRate": 90.58,
-    "records": 525,
-    "daysActive": 183,
-    "avgDailyOutput": 249.9
+    "availability": 98.07,
+    "performance": 80.84,
+    "quality": 89.95,
+    "oee": 71.31,
+    "hitRate": 90.64,
+    "records": 527,
+    "daysActive": 184,
+    "avgDailyOutput": 250.1
    },
    {
     "machine": "Mc-4",
     "isSample": false,
-    "production": 31260.5,
-    "loadingCapacity": 41535.0,
-    "plannedOutput": 34414.2,
-    "workingHours": 4424.0,
-    "operatingHours": 4365.6,
+    "production": 31468.5,
+    "loadingCapacity": 41774.0,
+    "plannedOutput": 34622.2,
+    "workingHours": 4448.0,
+    "operatingHours": 4389.6,
     "lossHours": 58.4,
-    "qualityPass": 31445.7,
+    "qualityPass": 31653.7,
     "topping": 2968.5,
     "redyeing": 617.9,
-    "availability": 98.68,
-    "performance": 75.26,
-    "quality": 91.37,
-    "oee": 67.86,
-    "hitRate": 90.84,
-    "records": 477,
-    "daysActive": 182,
-    "avgDailyOutput": 171.8
+    "availability": 98.69,
+    "performance": 75.33,
+    "quality": 91.43,
+    "oee": 67.97,
+    "hitRate": 90.89,
+    "records": 479,
+    "daysActive": 183,
+    "avgDailyOutput": 172.0
    },
    {
     "machine": "Mc-12",
     "isSample": false,
-    "production": 10085.0,
-    "loadingCapacity": 13276.7,
-    "plannedOutput": 11111.0,
-    "workingHours": 4432.0,
-    "operatingHours": 4270.3,
+    "production": 10160.4,
+    "loadingCapacity": 13351.7,
+    "plannedOutput": 11186.4,
+    "workingHours": 4456.0,
+    "operatingHours": 4294.3,
     "lossHours": 161.7,
-    "qualityPass": 10189.9,
+    "qualityPass": 10265.3,
     "topping": 921.1,
     "redyeing": 516.4,
-    "availability": 96.35,
-    "performance": 75.96,
-    "quality": 91.71,
-    "oee": 67.12,
-    "hitRate": 90.77,
-    "records": 481,
-    "daysActive": 182,
-    "avgDailyOutput": 55.4
+    "availability": 96.37,
+    "performance": 76.1,
+    "quality": 91.77,
+    "oee": 67.3,
+    "hitRate": 90.83,
+    "records": 483,
+    "daysActive": 183,
+    "avgDailyOutput": 55.5
    },
    {
     "machine": "Mc-9",
     "isSample": false,
-    "production": 30889.9,
-    "loadingCapacity": 44146.0,
-    "plannedOutput": 32864.2,
-    "workingHours": 4448.0,
-    "operatingHours": 4394.5,
+    "production": 31070.9,
+    "loadingCapacity": 44396.0,
+    "plannedOutput": 33045.2,
+    "workingHours": 4472.0,
+    "operatingHours": 4418.5,
     "lossHours": 56.0,
-    "qualityPass": 31131.6,
+    "qualityPass": 31312.6,
     "topping": 1732.6,
     "redyeing": 1041.4,
     "availability": 98.8,
-    "performance": 69.97,
-    "quality": 94.73,
-    "oee": 65.49,
-    "hitRate": 93.99,
-    "records": 597,
-    "daysActive": 182,
-    "avgDailyOutput": 169.7
+    "performance": 69.99,
+    "quality": 94.76,
+    "oee": 65.52,
+    "hitRate": 94.03,
+    "records": 599,
+    "daysActive": 183,
+    "avgDailyOutput": 169.8
    },
    {
     "machine": "Mc-14",
     "isSample": false,
     "production": 9447.7,
-    "loadingCapacity": 12712.0,
-    "plannedOutput": 10780.0,
-    "workingHours": 4414.0,
-    "operatingHours": 4068.1,
+    "loadingCapacity": 12752.0,
+    "plannedOutput": 10806.0,
+    "workingHours": 4438.0,
+    "operatingHours": 4092.1,
     "lossHours": 345.9,
     "qualityPass": 9954.1,
-    "topping": 826.0,
+    "topping": 852.0,
     "redyeing": 312.0,
-    "availability": 92.16,
-    "performance": 74.32,
-    "quality": 92.34,
-    "oee": 63.25,
-    "hitRate": 87.64,
-    "records": 477,
+    "availability": 92.21,
+    "performance": 74.09,
+    "quality": 92.12,
+    "oee": 62.93,
+    "hitRate": 87.43,
+    "records": 479,
     "daysActive": 168,
     "avgDailyOutput": 56.2
    },
    {
     "machine": "Mc-11",
     "isSample": false,
-    "production": 19909.4,
-    "loadingCapacity": 31139.0,
-    "plannedOutput": 21668.9,
-    "workingHours": 4408.0,
-    "operatingHours": 4303.6,
+    "production": 19963.4,
+    "loadingCapacity": 31229.0,
+    "plannedOutput": 21722.9,
+    "workingHours": 4432.0,
+    "operatingHours": 4327.6,
     "lossHours": 104.4,
-    "qualityPass": 20116.0,
+    "qualityPass": 20170.0,
     "topping": 1552.8,
     "redyeing": 773.7,
-    "availability": 97.63,
-    "performance": 63.94,
-    "quality": 92.83,
-    "oee": 57.95,
-    "hitRate": 91.88,
-    "records": 530,
-    "daysActive": 179,
-    "avgDailyOutput": 111.2
+    "availability": 97.64,
+    "performance": 63.93,
+    "quality": 92.85,
+    "oee": 57.96,
+    "hitRate": 91.9,
+    "records": 533,
+    "daysActive": 180,
+    "avgDailyOutput": 110.9
    },
    {
     "machine": "Mc-1",
@@ -4060,29 +4077,29 @@
     "quality": 97.59,
     "oee": null,
     "hitRate": 93.62,
-    "records": 383,
+    "records": 385,
     "daysActive": 165,
     "avgDailyOutput": 15.6
    },
    {
     "machine": "Mc-2",
     "isSample": true,
-    "production": 2101.6,
+    "production": 2112.5,
     "loadingCapacity": 0.0,
-    "plannedOutput": 2190.1,
+    "plannedOutput": 2201.0,
     "workingHours": 0.0,
     "operatingHours": -13.0,
     "lossHours": 13.0,
-    "qualityPass": 2138.0,
+    "qualityPass": 2148.9,
     "topping": 52.0,
     "redyeing": 47.9,
     "availability": null,
     "performance": null,
-    "quality": 97.62,
+    "quality": 97.64,
     "oee": null,
-    "hitRate": 95.96,
-    "records": 401,
-    "daysActive": 159,
+    "hitRate": 95.98,
+    "records": 403,
+    "daysActive": 160,
     "avgDailyOutput": 13.2
    },
    {
@@ -4102,30 +4119,30 @@
     "quality": 98.18,
     "oee": null,
     "hitRate": 93.97,
-    "records": 424,
+    "records": 426,
     "daysActive": 157,
     "avgDailyOutput": 25.9
    },
    {
     "machine": "Mc-25",
     "isSample": true,
-    "production": 4179.7,
+    "production": 4197.4,
     "loadingCapacity": 132.0,
-    "plannedOutput": 4432.1,
+    "plannedOutput": 4449.8,
     "workingHours": 0.0,
     "operatingHours": 0.0,
     "lossHours": 0.0,
-    "qualityPass": 4319.3,
+    "qualityPass": 4337.0,
     "topping": 112.8,
     "redyeing": 19.0,
     "availability": null,
-    "performance": 3166.46,
-    "quality": 97.45,
+    "performance": 3179.87,
+    "quality": 97.47,
     "oee": null,
-    "hitRate": 94.31,
-    "records": 420,
-    "daysActive": 164,
-    "avgDailyOutput": 25.5
+    "hitRate": 94.33,
+    "records": 422,
+    "daysActive": 165,
+    "avgDailyOutput": 25.4
    },
    {
     "machine": "Mc-26",
@@ -4144,7 +4161,7 @@
     "quality": 100.0,
     "oee": null,
     "hitRate": 99.61,
-    "records": 413,
+    "records": 415,
     "daysActive": 127,
     "avgDailyOutput": 24.2
    }
@@ -4276,7 +4293,7 @@
      "performance": null,
      "quality": 100.0,
      "oee": null,
-     "records": 27,
+     "records": 29,
      "days": 11
     }
    ],
@@ -4395,19 +4412,19 @@
     },
     {
      "month": "2026-10",
-     "production": 3360.2,
-     "loadingCapacity": 4490.0,
-     "plannedOutput": 4149.6,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
+     "production": 3645.0,
+     "loadingCapacity": 4820.0,
+     "plannedOutput": 4434.4,
+     "workingHours": 336.0,
+     "operatingHours": 336.0,
      "lossHours": 0.0,
-     "qualityPass": 3360.6,
+     "qualityPass": 3645.4,
      "availability": 100.0,
-     "performance": 74.84,
-     "quality": 80.99,
-     "oee": 60.61,
-     "records": 35,
-     "days": 13
+     "performance": 75.62,
+     "quality": 82.21,
+     "oee": 62.17,
+     "records": 37,
+     "days": 14
     }
    ],
    "Mc-11": [
@@ -4525,19 +4542,19 @@
     },
     {
      "month": "2026-10",
-     "production": 1531.6,
-     "loadingCapacity": 2310.0,
-     "plannedOutput": 1589.6,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
+     "production": 1585.6,
+     "loadingCapacity": 2400.0,
+     "plannedOutput": 1643.6,
+     "workingHours": 336.0,
+     "operatingHours": 336.0,
      "lossHours": 0.0,
-     "qualityPass": 1531.6,
+     "qualityPass": 1585.6,
      "availability": 100.0,
-     "performance": 66.3,
-     "quality": 96.35,
-     "oee": 63.88,
-     "records": 35,
-     "days": 13
+     "performance": 66.07,
+     "quality": 96.47,
+     "oee": 63.74,
+     "records": 38,
+     "days": 14
     }
    ],
    "Mc-12": [
@@ -4655,19 +4672,19 @@
     },
     {
      "month": "2026-10",
-     "production": 686.5,
-     "loadingCapacity": 1085.0,
-     "plannedOutput": 835.2,
-     "workingHours": 312.0,
-     "operatingHours": 302.0,
+     "production": 761.8,
+     "loadingCapacity": 1160.0,
+     "plannedOutput": 910.6,
+     "workingHours": 336.0,
+     "operatingHours": 326.0,
      "lossHours": 10.0,
-     "qualityPass": 686.5,
-     "availability": 96.79,
-     "performance": 63.27,
-     "quality": 82.19,
-     "oee": 50.33,
-     "records": 39,
-     "days": 13
+     "qualityPass": 761.8,
+     "availability": 97.02,
+     "performance": 65.67,
+     "quality": 83.66,
+     "oee": 53.31,
+     "records": 41,
+     "days": 14
     }
    ],
    "Mc-13": [
@@ -4785,19 +4802,19 @@
     },
     {
      "month": "2026-10",
-     "production": 795.0,
-     "loadingCapacity": 965.0,
-     "plannedOutput": 835.4,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
+     "production": 815.1,
+     "loadingCapacity": 1040.0,
+     "plannedOutput": 888.9,
+     "workingHours": 336.0,
+     "operatingHours": 336.0,
      "lossHours": 0.0,
-     "qualityPass": 795.0,
+     "qualityPass": 848.5,
      "availability": 100.0,
-     "performance": 82.39,
-     "quality": 95.16,
-     "oee": 78.4,
-     "records": 32,
-     "days": 13
+     "performance": 78.38,
+     "quality": 95.46,
+     "oee": 74.82,
+     "records": 35,
+     "days": 14
     }
    ],
    "Mc-14": [
@@ -4916,17 +4933,17 @@
     {
      "month": "2026-10",
      "production": 661.4,
-     "loadingCapacity": 875.0,
-     "plannedOutput": 688.8,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
+     "loadingCapacity": 915.0,
+     "plannedOutput": 714.8,
+     "workingHours": 336.0,
+     "operatingHours": 336.0,
      "lossHours": 0.0,
      "qualityPass": 661.4,
      "availability": 100.0,
-     "performance": 75.59,
-     "quality": 96.03,
-     "oee": 72.59,
-     "records": 29,
+     "performance": 72.29,
+     "quality": 92.53,
+     "oee": 66.89,
+     "records": 31,
      "days": 13
     }
    ],
@@ -5045,19 +5062,19 @@
     },
     {
      "month": "2026-10",
-     "production": 23009.4,
-     "loadingCapacity": 23820.0,
-     "plannedOutput": 23810.2,
-     "workingHours": 312.0,
-     "operatingHours": 308.0,
-     "lossHours": 4.0,
-     "qualityPass": 23010.2,
-     "availability": 98.72,
-     "performance": 96.6,
-     "quality": 96.64,
-     "oee": 92.15,
-     "records": 37,
-     "days": 13
+     "production": 23793.4,
+     "loadingCapacity": 24600.0,
+     "plannedOutput": 24594.2,
+     "workingHours": 336.0,
+     "operatingHours": 331.0,
+     "lossHours": 5.0,
+     "qualityPass": 23794.2,
+     "availability": 98.51,
+     "performance": 96.72,
+     "quality": 96.75,
+     "oee": 92.18,
+     "records": 39,
+     "days": 14
     }
    ],
    "Mc-16": [
@@ -5175,19 +5192,19 @@
     },
     {
      "month": "2026-10",
-     "production": 18158.6,
-     "loadingCapacity": 20280.0,
-     "plannedOutput": 20242.8,
-     "workingHours": 312.0,
-     "operatingHours": 297.5,
+     "production": 20274.6,
+     "loadingCapacity": 22380.0,
+     "plannedOutput": 22358.8,
+     "workingHours": 336.0,
+     "operatingHours": 321.5,
      "lossHours": 14.5,
-     "qualityPass": 18158.6,
-     "availability": 95.35,
-     "performance": 89.54,
-     "quality": 89.7,
-     "oee": 76.59,
-     "records": 32,
-     "days": 13
+     "qualityPass": 20274.6,
+     "availability": 95.68,
+     "performance": 90.59,
+     "quality": 90.68,
+     "oee": 78.6,
+     "records": 34,
+     "days": 14
     }
    ],
    "Mc-17": [
@@ -5305,19 +5322,19 @@
     },
     {
      "month": "2026-10",
-     "production": 14583.8,
-     "loadingCapacity": 17648.0,
-     "plannedOutput": 15309.1,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
-     "lossHours": 0.0,
-     "qualityPass": 14583.8,
-     "availability": 100.0,
-     "performance": 82.64,
-     "quality": 95.26,
-     "oee": 78.72,
-     "records": 32,
-     "days": 13
+     "production": 15978.8,
+     "loadingCapacity": 19178.0,
+     "plannedOutput": 16704.1,
+     "workingHours": 336.0,
+     "operatingHours": 335.0,
+     "lossHours": 1.0,
+     "qualityPass": 15978.8,
+     "availability": 99.7,
+     "performance": 83.32,
+     "quality": 95.66,
+     "oee": 79.46,
+     "records": 35,
+     "days": 14
     }
    ],
    "Mc-18": [
@@ -5435,19 +5452,19 @@
     },
     {
      "month": "2026-10",
-     "production": 3256.2,
-     "loadingCapacity": 3710.0,
-     "plannedOutput": 3574.2,
-     "workingHours": 312.0,
-     "operatingHours": 309.5,
+     "production": 3590.7,
+     "loadingCapacity": 4050.0,
+     "plannedOutput": 3908.7,
+     "workingHours": 336.0,
+     "operatingHours": 333.5,
      "lossHours": 2.5,
-     "qualityPass": 3256.2,
-     "availability": 99.2,
-     "performance": 87.77,
-     "quality": 91.1,
-     "oee": 79.32,
-     "records": 42,
-     "days": 13
+     "qualityPass": 3590.7,
+     "availability": 99.26,
+     "performance": 88.66,
+     "quality": 91.86,
+     "oee": 80.84,
+     "records": 44,
+     "days": 14
     }
    ],
    "Mc-19": [
@@ -5565,19 +5582,19 @@
     },
     {
      "month": "2026-10",
-     "production": 7891.0,
-     "loadingCapacity": 9200.0,
-     "plannedOutput": 8500.0,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
+     "production": 8499.6,
+     "loadingCapacity": 9880.0,
+     "plannedOutput": 9108.6,
+     "workingHours": 336.0,
+     "operatingHours": 336.0,
      "lossHours": 0.0,
-     "qualityPass": 7891.0,
+     "qualityPass": 8499.6,
      "availability": 100.0,
-     "performance": 85.77,
-     "quality": 92.84,
-     "oee": 79.63,
-     "records": 37,
-     "days": 13
+     "performance": 86.03,
+     "quality": 93.31,
+     "oee": 80.28,
+     "records": 39,
+     "days": 14
     }
    ],
    "Mc-2": [
@@ -5695,19 +5712,19 @@
     },
     {
      "month": "2026-10",
-     "production": 174.1,
+     "production": 185.0,
      "loadingCapacity": 0.0,
-     "plannedOutput": 174.1,
+     "plannedOutput": 185.0,
      "workingHours": 0.0,
      "operatingHours": 0.0,
      "lossHours": 0.0,
-     "qualityPass": 174.1,
+     "qualityPass": 185.0,
      "availability": null,
      "performance": null,
      "quality": 100.0,
      "oee": null,
-     "records": 31,
-     "days": 11
+     "records": 33,
+     "days": 12
     }
    ],
    "Mc-20": [
@@ -5825,19 +5842,19 @@
     },
     {
      "month": "2026-10",
-     "production": 12305.1,
-     "loadingCapacity": 14200.0,
-     "plannedOutput": 12305.1,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
+     "production": 12860.1,
+     "loadingCapacity": 14830.0,
+     "plannedOutput": 12860.1,
+     "workingHours": 336.0,
+     "operatingHours": 336.0,
      "lossHours": 0.0,
-     "qualityPass": 11708.1,
+     "qualityPass": 12263.1,
      "availability": 100.0,
-     "performance": 86.66,
-     "quality": 95.15,
-     "oee": 82.45,
-     "records": 41,
-     "days": 13
+     "performance": 86.72,
+     "quality": 95.36,
+     "oee": 82.69,
+     "records": 44,
+     "days": 14
     }
    ],
    "Mc-21": [
@@ -5955,19 +5972,19 @@
     },
     {
      "month": "2026-10",
-     "production": 4136.7,
-     "loadingCapacity": 4520.0,
-     "plannedOutput": 4136.7,
-     "workingHours": 312.0,
-     "operatingHours": 306.0,
-     "lossHours": 6.0,
-     "qualityPass": 4136.7,
-     "availability": 98.08,
-     "performance": 91.52,
+     "production": 4431.3,
+     "loadingCapacity": 4860.0,
+     "plannedOutput": 4431.3,
+     "workingHours": 336.0,
+     "operatingHours": 319.0,
+     "lossHours": 17.0,
+     "qualityPass": 4431.3,
+     "availability": 94.94,
+     "performance": 91.18,
      "quality": 100.0,
-     "oee": 89.76,
-     "records": 47,
-     "days": 13
+     "oee": 86.57,
+     "records": 50,
+     "days": 14
     }
    ],
    "Mc-22": [
@@ -6085,19 +6102,19 @@
     },
     {
      "month": "2026-10",
-     "production": 24722.6,
-     "loadingCapacity": 26780.0,
-     "plannedOutput": 24722.6,
-     "workingHours": 324.0,
-     "operatingHours": 324.0,
-     "lossHours": 0.0,
-     "qualityPass": 24722.6,
-     "availability": 100.0,
-     "performance": 92.32,
+     "production": 25865.0,
+     "loadingCapacity": 27960.0,
+     "plannedOutput": 25865.0,
+     "workingHours": 348.0,
+     "operatingHours": 347.0,
+     "lossHours": 1.0,
+     "qualityPass": 25865.0,
+     "availability": 99.71,
+     "performance": 92.51,
      "quality": 100.0,
-     "oee": 92.32,
-     "records": 79,
-     "days": 13
+     "oee": 92.24,
+     "records": 83,
+     "days": 14
     }
    ],
    "Mc-23": [
@@ -6215,19 +6232,19 @@
     },
     {
      "month": "2026-10",
-     "production": 4622.8,
-     "loadingCapacity": 5070.0,
-     "plannedOutput": 4622.8,
-     "workingHours": 312.0,
-     "operatingHours": 303.0,
+     "production": 5048.5,
+     "loadingCapacity": 5580.0,
+     "plannedOutput": 5048.5,
+     "workingHours": 336.0,
+     "operatingHours": 327.0,
      "lossHours": 9.0,
-     "qualityPass": 4458.8,
-     "availability": 97.12,
-     "performance": 91.18,
-     "quality": 96.45,
-     "oee": 85.41,
-     "records": 34,
-     "days": 13
+     "qualityPass": 4884.5,
+     "availability": 97.32,
+     "performance": 90.47,
+     "quality": 96.75,
+     "oee": 85.19,
+     "records": 38,
+     "days": 14
     }
    ],
    "Mc-24": [
@@ -6345,19 +6362,19 @@
     },
     {
      "month": "2026-10",
-     "production": 2566.1,
-     "loadingCapacity": 3250.0,
-     "plannedOutput": 2860.5,
-     "workingHours": 312.0,
-     "operatingHours": 307.0,
+     "production": 2900.3,
+     "loadingCapacity": 3590.0,
+     "plannedOutput": 3194.8,
+     "workingHours": 336.0,
+     "operatingHours": 331.0,
      "lossHours": 5.0,
-     "qualityPass": 2693.1,
-     "availability": 98.4,
-     "performance": 78.96,
-     "quality": 94.15,
-     "oee": 73.14,
-     "records": 31,
-     "days": 12
+     "qualityPass": 3027.3,
+     "availability": 98.51,
+     "performance": 80.79,
+     "quality": 94.76,
+     "oee": 75.42,
+     "records": 33,
+     "days": 13
     }
    ],
    "Mc-25": [
@@ -6475,19 +6492,19 @@
     },
     {
      "month": "2026-10",
-     "production": 333.4,
+     "production": 351.1,
      "loadingCapacity": 0.0,
-     "plannedOutput": 351.9,
+     "plannedOutput": 369.6,
      "workingHours": 0.0,
      "operatingHours": 0.0,
      "lossHours": 0.0,
-     "qualityPass": 351.9,
+     "qualityPass": 369.6,
      "availability": null,
      "performance": null,
      "quality": 100.0,
      "oee": null,
-     "records": 30,
-     "days": 13
+     "records": 32,
+     "days": 14
     }
    ],
    "Mc-26": [
@@ -6616,7 +6633,7 @@
      "performance": null,
      "quality": 100.0,
      "oee": null,
-     "records": 32,
+     "records": 34,
      "days": 11
     }
    ],
@@ -6746,7 +6763,7 @@
      "performance": null,
      "quality": 93.99,
      "oee": null,
-     "records": 29,
+     "records": 31,
      "days": 12
     }
    ],
@@ -6865,19 +6882,19 @@
     },
     {
      "month": "2026-10",
-     "production": 1930.7,
-     "loadingCapacity": 2796.5,
-     "plannedOutput": 2346.7,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
+     "production": 2138.7,
+     "loadingCapacity": 3035.5,
+     "plannedOutput": 2554.7,
+     "workingHours": 336.0,
+     "operatingHours": 336.0,
      "lossHours": 0.0,
-     "qualityPass": 2019.7,
+     "qualityPass": 2227.7,
      "availability": 100.0,
-     "performance": 69.04,
-     "quality": 86.07,
-     "oee": 59.42,
-     "records": 40,
-     "days": 13
+     "performance": 70.46,
+     "quality": 87.2,
+     "oee": 61.44,
+     "records": 42,
+     "days": 14
     }
    ],
    "Mc-5": [
@@ -6995,19 +7012,19 @@
     },
     {
      "month": "2026-10",
-     "production": 23185.0,
-     "loadingCapacity": 24650.0,
-     "plannedOutput": 23185.0,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
+     "production": 25228.3,
+     "loadingCapacity": 27125.0,
+     "plannedOutput": 25228.3,
+     "workingHours": 336.0,
+     "operatingHours": 336.0,
      "lossHours": 0.0,
-     "qualityPass": 23185.0,
+     "qualityPass": 25228.3,
      "availability": 100.0,
-     "performance": 94.06,
+     "performance": 93.01,
      "quality": 100.0,
-     "oee": 94.06,
-     "records": 74,
-     "days": 13
+     "oee": 93.01,
+     "records": 81,
+     "days": 14
     }
    ],
    "Mc-6": [
@@ -7125,19 +7142,19 @@
     },
     {
      "month": "2026-10",
-     "production": 17554.0,
-     "loadingCapacity": 19035.0,
-     "plannedOutput": 18351.7,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
-     "lossHours": 0.0,
-     "qualityPass": 17554.0,
-     "availability": 100.0,
-     "performance": 92.22,
-     "quality": 95.65,
-     "oee": 88.21,
-     "records": 38,
-     "days": 13
+     "production": 18355.0,
+     "loadingCapacity": 19860.0,
+     "plannedOutput": 19152.7,
+     "workingHours": 336.0,
+     "operatingHours": 334.0,
+     "lossHours": 2.0,
+     "qualityPass": 18355.0,
+     "availability": 99.4,
+     "performance": 92.42,
+     "quality": 95.83,
+     "oee": 88.05,
+     "records": 40,
+     "days": 14
     }
    ],
    "Mc-7": [
@@ -7255,19 +7272,19 @@
     },
     {
      "month": "2026-10",
-     "production": 22598.6,
-     "loadingCapacity": 25080.0,
-     "plannedOutput": 23569.6,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
-     "lossHours": 0.0,
-     "qualityPass": 22598.6,
-     "availability": 100.0,
-     "performance": 90.11,
-     "quality": 95.88,
-     "oee": 86.39,
-     "records": 39,
-     "days": 13
+     "production": 24613.6,
+     "loadingCapacity": 27120.0,
+     "plannedOutput": 25584.6,
+     "workingHours": 336.0,
+     "operatingHours": 332.5,
+     "lossHours": 3.5,
+     "qualityPass": 24613.6,
+     "availability": 98.96,
+     "performance": 90.76,
+     "quality": 96.2,
+     "oee": 86.4,
+     "records": 43,
+     "days": 14
     }
    ],
    "Mc-8": [
@@ -7385,19 +7402,19 @@
     },
     {
      "month": "2026-10",
-     "production": 26725.4,
-     "loadingCapacity": 28950.0,
-     "plannedOutput": 26725.4,
-     "workingHours": 300.0,
-     "operatingHours": 300.0,
+     "production": 29116.4,
+     "loadingCapacity": 31520.0,
+     "plannedOutput": 29116.4,
+     "workingHours": 324.0,
+     "operatingHours": 324.0,
      "lossHours": 0.0,
-     "qualityPass": 26725.4,
+     "qualityPass": 29116.4,
      "availability": 100.0,
-     "performance": 92.32,
+     "performance": 92.37,
      "quality": 100.0,
-     "oee": 92.32,
-     "records": 85,
-     "days": 13
+     "oee": 92.37,
+     "records": 94,
+     "days": 14
     }
    ],
    "Mc-9": [
@@ -7515,19 +7532,19 @@
     },
     {
      "month": "2026-10",
-     "production": 2278.3,
-     "loadingCapacity": 3365.0,
-     "plannedOutput": 2426.9,
-     "workingHours": 312.0,
-     "operatingHours": 312.0,
+     "production": 2459.3,
+     "loadingCapacity": 3615.0,
+     "plannedOutput": 2607.9,
+     "workingHours": 336.0,
+     "operatingHours": 336.0,
      "lossHours": 0.0,
-     "qualityPass": 2344.9,
+     "qualityPass": 2525.9,
      "availability": 100.0,
-     "performance": 67.71,
-     "quality": 96.62,
-     "oee": 65.42,
-     "records": 46,
-     "days": 13
+     "performance": 68.03,
+     "quality": 96.86,
+     "oee": 65.89,
+     "records": 48,
+     "days": 14
     }
    ]
   },
@@ -17695,7 +17712,8 @@
      "2026-10-12",
      "2026-10-13",
      "2026-10-14",
-     "2026-10-15"
+     "2026-10-15",
+     "2026-10-17"
     ],
     "machines": [
      "Mc-1",
@@ -17739,6 +17757,7 @@
       null,
       null,
       null,
+      null,
       null
      ],
      [
@@ -17754,7 +17773,8 @@
       83.1,
       19.7,
       96.1,
-      95.0
+      95.0,
+      86.3
      ],
      [
       78.6,
@@ -17769,7 +17789,8 @@
       78.8,
       66.2,
       70.6,
-      75.2
+      75.2,
+      60.0
      ],
      [
       88.4,
@@ -17784,7 +17805,8 @@
       46.7,
       65.0,
       14.0,
-      77.6
+      77.6,
+      100.5
      ],
      [
       82.8,
@@ -17799,7 +17821,8 @@
       72.8,
       22.4,
       77.5,
-      93.0
+      93.0,
+      26.8
      ],
      [
       99.2,
@@ -17814,7 +17837,8 @@
       70.5,
       84.6,
       82.6,
-      86.2
+      86.2,
+      0.0
      ],
      [
       100.9,
@@ -17829,7 +17853,8 @@
       99.0,
       102.0,
       101.0,
-      100.3
+      100.3,
+      96.3
      ],
      [
       98.0,
@@ -17844,7 +17869,8 @@
       24.5,
       103.2,
       26.1,
-      100.0
+      100.0,
+      100.8
      ],
      [
       95.7,
@@ -17859,7 +17885,8 @@
       92.5,
       88.3,
       84.0,
-      84.9
+      84.9,
+      87.4
      ],
      [
       104.3,
@@ -17874,7 +17901,8 @@
       104.7,
       99.0,
       22.9,
-      96.2
+      96.2,
+      98.4
      ],
      [
       90.7,
@@ -17889,9 +17917,11 @@
       24.5,
       94.4,
       93.8,
-      20.3
+      20.3,
+      89.5
      ],
      [
+      null,
       null,
       null,
       null,
@@ -17919,7 +17949,8 @@
       88.5,
       82.9,
       97.9,
-      87.1
+      87.1,
+      88.1
      ],
      [
       93.3,
@@ -17934,7 +17965,8 @@
       94.2,
       90.3,
       85.3,
-      93.6
+      93.6,
+      46.9
      ],
      [
       95.3,
@@ -17949,7 +17981,8 @@
       93.2,
       94.1,
       90.1,
-      87.4
+      87.4,
+      92.8
      ],
      [
       92.0,
@@ -17964,7 +17997,8 @@
       92.7,
       92.1,
       77.0,
-      83.3
+      83.3,
+      83.5
      ],
      [
       null,
@@ -17979,9 +18013,11 @@
       72.5,
       97.1,
       79.2,
-      18.3
+      18.3,
+      98.3
      ],
      [
+      null,
       null,
       null,
       null,
@@ -18009,9 +18045,11 @@
       null,
       null,
       null,
+      null,
       null
      ],
      [
+      null,
       null,
       null,
       null,
@@ -18039,7 +18077,8 @@
       89.2,
       84.4,
       87.8,
-      95.4
+      95.4,
+      87.0
      ],
      [
       89.7,
@@ -18054,7 +18093,8 @@
       96.6,
       86.1,
       90.7,
-      95.6
+      95.6,
+      82.6
      ],
      [
       95.6,
@@ -18069,7 +18109,8 @@
       98.5,
       100.0,
       95.4,
-      97.8
+      97.8,
+      89.0
      ],
      [
       95.6,
@@ -18084,7 +18125,8 @@
       94.1,
       93.6,
       89.0,
-      94.4
+      94.4,
+      84.4
      ],
      [
       88.5,
@@ -18099,7 +18141,8 @@
       94.4,
       96.5,
       94.4,
-      97.4
+      97.4,
+      93.0
      ],
      [
       80.1,
@@ -18114,7 +18157,8 @@
       86.5,
       54.4,
       67.2,
-      73.0
+      73.0,
+      72.4
      ]
     ],
     "production": [
@@ -18131,7 +18175,8 @@
       0.0,
       17.8,
       8.4,
-      17.6
+      17.6,
+      0.0
      ],
      [
       338.5,
@@ -18146,7 +18191,8 @@
       282.6,
       134.0,
       298.0,
-      313.5
+      313.5,
+      284.8
      ],
      [
       141.4,
@@ -18161,7 +18207,8 @@
       126.0,
       119.2,
       120.0,
-      173.0
+      173.0,
+      54.0
      ],
      [
       128.1,
@@ -18176,7 +18223,8 @@
       20.0,
       26.0,
       22.4,
-      62.0
+      62.0,
+      75.3
      ],
      [
       74.5,
@@ -18191,7 +18239,8 @@
       61.9,
       40.4,
       62.0,
-      65.1
+      65.1,
+      20.1
      ],
      [
       64.5,
@@ -18206,7 +18255,8 @@
       52.9,
       50.8,
       66.0,
-      34.5
+      34.5,
+      0.0
      ],
      [
       2119.0,
@@ -18221,7 +18271,8 @@
       2020.0,
       2080.0,
       1030.0,
-      1805.6
+      1805.6,
+      784.0
      ],
      [
       1000.0,
@@ -18236,7 +18287,8 @@
       1022.0,
       2106.2,
       1050.0,
-      1020.0
+      1020.0,
+      2116.0
      ],
      [
       732.0,
@@ -18251,7 +18303,8 @@
       1414.6,
       1351.7,
       687.0,
-      1299.0
+      1299.0,
+      1395.0
      ],
      [
       354.6,
@@ -18266,7 +18319,8 @@
       178.0,
       336.6,
       156.0,
-      308.0
+      308.0,
+      334.5
      ],
      [
       925.0,
@@ -18281,7 +18335,8 @@
       333.0,
       642.2,
       956.7,
-      276.0
+      276.0,
+      608.6
      ],
      [
       28.6,
@@ -18296,7 +18351,8 @@
       8.2,
       15.6,
       7.7,
-      17.4
+      17.4,
+      10.9
      ],
      [
       1014.1,
@@ -18311,7 +18367,8 @@
       1115.1,
       1045.0,
       1234.0,
-      1098.0
+      1098.0,
+      555.0
      ],
      [
       466.6,
@@ -18326,7 +18383,8 @@
       452.0,
       406.5,
       290.1,
-      318.1
+      318.1,
+      294.6
      ],
      [
       1515.1,
@@ -18341,7 +18399,8 @@
       2014.0,
       2090.0,
       2108.8,
-      1905.5
+      1905.5,
+      1142.4
      ],
      [
       312.8,
@@ -18356,7 +18415,8 @@
       472.8,
       331.4,
       261.8,
-      266.6
+      266.6,
+      425.6
      ],
      [
       0.0,
@@ -18371,7 +18431,8 @@
       261.0,
       165.0,
       150.5,
-      138.0
+      138.0,
+      334.2
      ],
      [
       34.1,
@@ -18386,7 +18447,8 @@
       19.3,
       31.0,
       27.1,
-      11.0
+      11.0,
+      17.7
      ],
      [
       12.7,
@@ -18401,6 +18463,7 @@
       12.2,
       27.9,
       18.0,
+      0.0,
       0.0
      ],
      [
@@ -18416,7 +18479,8 @@
       16.3,
       41.2,
       18.2,
-      10.1
+      10.1,
+      0.0
      ],
      [
       102.3,
@@ -18431,7 +18495,8 @@
       113.3,
       214.5,
       223.0,
-      121.2
+      121.2,
+      208.0
      ],
      [
       2286.5,
@@ -18446,7 +18511,8 @@
       1643.0,
       1830.0,
       1542.0,
-      1624.5
+      1624.5,
+      2043.4
      ],
      [
       1577.0,
@@ -18461,7 +18527,8 @@
       1502.0,
       650.0,
       1630.6,
-      2078.0
+      2078.0,
+      801.0
      ],
      [
       1950.0,
@@ -18476,7 +18543,8 @@
       1920.0,
       1740.5,
       1815.2,
-      1983.0
+      1983.0,
+      2015.0
      ],
      [
       2177.1,
@@ -18491,7 +18559,8 @@
       1934.8,
       2180.6,
       2228.2,
-      1315.1
+      1315.1,
+      2391.0
      ],
      [
       284.2,
@@ -18506,7 +18575,8 @@
       86.5,
       136.0,
       420.0,
-      182.6
+      182.6,
+      181.0
      ]
     ]
    }
@@ -18654,22 +18724,22 @@
    },
    "2026-10": {
     "A": {
-     "production": 105910.4,
-     "availability": 99.33,
-     "performance": 89.54,
-     "quality": 94.64,
-     "oee": 84.18,
-     "lossHours": 22.0,
-     "records": 499
+     "production": 112703.7,
+     "availability": 98.86,
+     "performance": 89.66,
+     "quality": 94.96,
+     "oee": 84.16,
+     "lossHours": 40.5,
+     "records": 533
     },
     "B": {
-     "production": 111857.0,
-     "availability": 99.11,
-     "performance": 90.35,
-     "quality": 97.57,
-     "oee": 87.37,
-     "lossHours": 29.0,
-     "records": 554
+     "production": 121156.0,
+     "availability": 99.15,
+     "performance": 90.54,
+     "quality": 97.73,
+     "oee": 87.73,
+     "lossHours": 30.0,
+     "records": 595
     }
    }
   },
@@ -19961,40 +20031,46 @@
      ]
     },
     "2026-10": {
-     "totalHours": 51.0,
+     "totalHours": 70.5,
      "categories": [
       {
        "category": "Machine / Technical Failure",
-       "hours": 24.5,
+       "hours": 32.0,
+       "count": 7,
+       "share": 45.39
+      },
+      {
+       "category": "Maintenance / Planned Service",
+       "hours": 18.0,
        "count": 3,
-       "share": 48.04
+       "share": 25.53
       },
       {
        "category": "Heat-Set / Auto Stitch Delay",
        "hours": 14.5,
        "count": 3,
-       "share": 28.43
-      },
-      {
-       "category": "Maintenance / Planned Service",
-       "hours": 6.0,
-       "count": 1,
-       "share": 11.76
+       "share": 20.57
       },
       {
        "category": "Other / Unclassified",
        "hours": 4.0,
        "count": 6,
-       "share": 7.84
+       "share": 5.67
       },
       {
        "category": "Batch / Production Planning",
        "hours": 2.0,
        "count": 1,
-       "share": 3.92
+       "share": 2.84
       }
      ],
      "topReasons": [
+      {
+       "reason": "CONTROLLER SERVICING",
+       "hours": 17.0,
+       "count": 2,
+       "category": "Maintenance / Planned Service"
+      },
       {
        "reason": "HEAT SET DELAY",
        "hours": 14.5,
@@ -20014,22 +20090,46 @@
        "category": "Machine / Technical Failure"
       },
       {
-       "reason": "CONTROLLER SERVICING",
-       "hours": 6.0,
-       "count": 1,
-       "category": "Maintenance / Planned Service"
-      },
-      {
        "reason": "Delay grey fabric receiving from knitting",
        "hours": 4.0,
        "count": 1,
        "category": "Other / Unclassified"
       },
       {
+       "reason": "REEL PULLEY PROBLEM",
+       "hours": 3.5,
+       "count": 1,
+       "category": "Machine / Technical Failure"
+      },
+      {
        "reason": "BATCH NOT READY",
        "hours": 2.0,
        "count": 1,
        "category": "Batch / Production Planning"
+      },
+      {
+       "reason": "REEL PROBLEM",
+       "hours": 2.0,
+       "count": 1,
+       "category": "Machine / Technical Failure"
+      },
+      {
+       "reason": "REEL BEARING SERVICING",
+       "hours": 1.0,
+       "count": 1,
+       "category": "Maintenance / Planned Service"
+      },
+      {
+       "reason": "NOZZLE RUBBER CHANGE",
+       "hours": 1.0,
+       "count": 1,
+       "category": "Machine / Technical Failure"
+      },
+      {
+       "reason": "DRAIN VALVE PROBLEM",
+       "hours": 1.0,
+       "count": 1,
+       "category": "Machine / Technical Failure"
       }
      ]
     }
@@ -20038,128 +20138,128 @@
     {
      "machine": "Mc-14",
      "lossHours": 345.9,
-     "oee": 63.25,
+     "oee": 62.93,
      "production": 9447.7
     },
     {
      "machine": "Mc-23",
      "lossHours": 229.4,
-     "oee": 85.64,
-     "production": 75249.2
+     "oee": 85.63,
+     "production": 75674.8
+    },
+    {
+     "machine": "Mc-21",
+     "lossHours": 178.7,
+     "oee": 83.14,
+     "production": 55657.1
     },
     {
      "machine": "Mc-13",
      "lossHours": 169.3,
-     "oee": 77.29,
-     "production": 10287.3
-    },
-    {
-     "machine": "Mc-21",
-     "lossHours": 167.7,
-     "oee": 83.34,
-     "production": 55362.4
+     "oee": 77.0,
+     "production": 10307.4
     },
     {
      "machine": "Mc-12",
      "lossHours": 161.7,
-     "oee": 67.12,
-     "production": 10085.0
+     "oee": 67.3,
+     "production": 10160.4
     },
     {
      "machine": "Mc-11",
      "lossHours": 104.4,
-     "oee": 57.95,
-     "production": 19909.4
+     "oee": 57.96,
+     "production": 19963.4
+    },
+    {
+     "machine": "Mc-15",
+     "lossHours": 99.6,
+     "oee": 95.73,
+     "production": 329669.8
     },
     {
      "machine": "Mc-24",
      "lossHours": 99.1,
-     "oee": 79.04,
-     "production": 42747.8
-    },
-    {
-     "machine": "Mc-15",
-     "lossHours": 98.6,
-     "oee": 95.73,
-     "production": 328885.8
+     "oee": 79.17,
+     "production": 43082.1
     },
     {
      "machine": "Mc-16",
      "lossHours": 88.8,
-     "oee": 87.39,
-     "production": 303861.6
+     "oee": 87.47,
+     "production": 305977.6
+    },
+    {
+     "machine": "Mc-7",
+     "lossHours": 86.1,
+     "oee": 84.75,
+     "production": 322905.3
     },
     {
      "machine": "Mc-10",
      "lossHours": 85.3,
-     "oee": 71.23,
-     "production": 45739.3
+     "oee": 71.31,
+     "production": 46024.1
     },
     {
      "machine": "Mc-5",
      "lossHours": 84.5,
-     "oee": 88.08,
-     "production": 330827.7
+     "oee": 88.04,
+     "production": 332871.1
     },
     {
      "machine": "Mc-18",
      "lossHours": 84.1,
-     "oee": 77.08,
-     "production": 43754.0
-    },
-    {
-     "machine": "Mc-7",
-     "lossHours": 82.6,
-     "oee": 84.74,
-     "production": 320890.3
+     "oee": 77.21,
+     "production": 44088.5
     },
     {
      "machine": "Mc-22",
-     "lossHours": 80.1,
-     "oee": 90.11,
-     "production": 312190.4
+     "lossHours": 81.1,
+     "oee": 90.12,
+     "production": 313332.8
     },
     {
      "machine": "Mc-6",
-     "lossHours": 65.9,
-     "oee": 87.73,
-     "production": 235572.7
+     "lossHours": 67.9,
+     "oee": 87.72,
+     "production": 236373.7
     },
     {
      "machine": "Mc-4",
      "lossHours": 58.4,
-     "oee": 67.86,
-     "production": 31260.5
+     "oee": 67.97,
+     "production": 31468.5
     },
     {
      "machine": "Mc-9",
      "lossHours": 56.0,
-     "oee": 65.49,
-     "production": 30889.9
+     "oee": 65.52,
+     "production": 31070.9
+    },
+    {
+     "machine": "Mc-17",
+     "lossHours": 48.8,
+     "oee": 78.92,
+     "production": 192576.8
     },
     {
      "machine": "Mc-20",
      "lossHours": 48.2,
-     "oee": 83.3,
-     "production": 181860.9
-    },
-    {
-     "machine": "Mc-17",
-     "lossHours": 47.8,
-     "oee": 78.85,
-     "production": 191181.8
+     "oee": 83.32,
+     "production": 182415.9
     },
     {
      "machine": "Mc-8",
      "lossHours": 41.9,
-     "oee": 92.42,
-     "production": 371702.1
+     "oee": 92.43,
+     "production": 374093.1
     },
     {
      "machine": "Mc-19",
      "lossHours": 39.5,
-     "oee": 82.7,
-     "production": 104590.6
+     "oee": 82.74,
+     "production": 105199.2
     }
    ]
   },
@@ -21706,59 +21806,67 @@
      "items": [
       [
        "JOCKEY",
-       71151.3
+       75120.7
       ],
       [
        "MORIS MJ",
-       20082.4
+       21158.4
       ],
       [
        "WALMART",
-       19052.5
-      ],
-      [
-       "D. WALMART",
-       7793.4
+       20478.5
       ],
       [
        "SCROLL",
-       7610.8
+       9172.4
+      ],
+      [
+       "D. WALMART",
+       9100.2
+      ],
+      [
+       "NAYOMI",
+       6600.6
       ],
       [
        "CENTRIC",
-       6532.2
+       6552.3
+      ],
+      [
+       "TARGET",
+       6255.6
       ],
       [
        "CARRE FOUR",
        6044.6
       ],
       [
-       "NAYOMI",
-       5277.2
-      ],
-      [
-       "TARGET",
-       5107.0
+       "D. TARGET",
+       5786.0
       ],
       [
        "BAHAMA",
        4855.2
       ],
       [
-       "D. TARGET",
-       4774.0
+       "ADIDAS",
+       4678.0
       ],
       [
        "RENE ROFE",
-       4122.8
-      ],
-      [
-       "ADIDAS",
-       4066.0
+       4675.2
       ],
       [
        "D. MAIDEN FORM",
-       3953.1
+       4044.1
+      ],
+      [
+       "NEXT",
+       3888.1
+      ],
+      [
+       "LVER",
+       3820.6
       ],
       [
        "GILDAN",
@@ -21769,45 +21877,37 @@
        3618.1
       ],
       [
-       "LVER",
-       3607.4
-      ],
-      [
        "M.FORM",
-       3431.7
+       3521.7
       ],
       [
        "D. HAYS",
        3247.5
-      ],
-      [
-       "NEXT",
-       3219.2
       ]
      ],
-     "total": 217767.4
+     "total": 233859.7
     },
     "fabric": {
      "items": [
       [
        "95/5",
-       87306.1
+       92479.0
       ],
       [
        "S/J",
-       71714.4
+       76581.2
       ],
       [
        "2X2",
-       11933.1
+       13721.2
       ],
       [
        "1X1",
-       11740.5
+       12743.5
       ],
       [
        "90/10",
-       6993.8
+       7961.7
       ],
       [
        "60/40 (1X1)",
@@ -21815,7 +21915,7 @@
       ],
       [
        "93/7",
-       5083.0
+       5100.7
       ],
       [
        "60X40(1X1)",
@@ -21830,45 +21930,45 @@
        2768.6
       ],
       [
+       "60/40 (S/J)",
+       1897.9
+      ],
+      [
        "71.25/23.75/5",
        1806.4
       ],
       [
-       "P.RIB",
-       1177.8
-      ],
-      [
        "Other",
-       4172.6
+       5728.4
       ]
      ],
-     "total": 217767.4
+     "total": 233859.7
     },
     "color": {
      "items": [
       [
        "WHITE",
-       66138.2
+       70181.0
       ],
       [
        "LIGHT",
-       61714.6
+       65444.1
       ],
       [
        "EXTRA DARK",
-       39340.8
+       42675.4
       ],
       [
        "DARK",
-       16813.8
+       18306.4
       ],
       [
        "H. GREY",
-       14532.3
+       16817.7
       ],
       [
        "MEDIUM",
-       12381.2
+       13588.6
       ],
       [
        "DOUBLE PART",
@@ -21879,41 +21979,41 @@
        0.0
       ]
      ],
-     "total": 217767.4
+     "total": 233859.7
     },
     "gsm": {
      "items": [
       [
        "Low",
-       167411.2
+       179211.1
       ],
       [
        "High",
-       50356.2
+       54648.6
       ],
       [
        "Unspecified",
        0.0
       ]
      ],
-     "total": 217767.4
+     "total": 233859.7
     },
     "dia": {
      "items": [
       [
        "OPEN",
-       168200.6
+       180313.4
       ],
       [
        "DIA",
-       49566.8
+       53546.3
       ],
       [
        "Unspecified",
        0.0
       ]
      ],
-     "total": 217767.4
+     "total": 233859.7
     }
    }
   },
@@ -22040,19 +22140,19 @@
     },
     {
      "month": "2026-10",
-     "total": 317,
-     "pass": 292,
-     "fail": 25,
-     "rate": 92.11,
+     "total": 335,
+     "pass": 308,
+     "fail": 27,
+     "rate": 91.94,
      "b2b": {
-      "total": 163,
-      "pass": 159,
-      "rate": 97.55
+      "total": 174,
+      "pass": 169,
+      "rate": 97.13
      },
      "l2b": {
-      "total": 154,
-      "pass": 133,
-      "rate": 86.36
+      "total": 161,
+      "pass": 139,
+      "rate": 86.34
      }
     }
    ],
@@ -24047,6 +24147,17 @@
      "b2bPass": 20,
      "l2b": 6,
      "l2bPass": 5
+    },
+    {
+     "date": "2026-10-15",
+     "month": "2026-10",
+     "total": 18,
+     "pass": 16,
+     "rate": 88.89,
+     "b2b": 11,
+     "b2bPass": 10,
+     "l2b": 7,
+     "l2bPass": 6
     }
    ],
    "available": true
@@ -32407,37 +32518,37 @@
    {
     "type": "info",
     "title": "Month-to-date output",
-    "text": "217,767 kg produced across 13 working days — 93.1% of the prorated 468,000 kg goal (234,000 kg)."
+    "text": "233,860 kg produced across 14 working days — 92.8% of the prorated 468,000 kg goal (252,000 kg)."
    },
    {
     "type": "positive",
     "title": "OEE above target",
-    "text": "OEE closed at 85.8% against the 85% target (+0.4 pp vs Sep '26)."
+    "text": "OEE closed at 86.0% against the 85% target (+0.6 pp vs Sep '26)."
    },
    {
     "type": "positive",
     "title": "Availability strong",
-    "text": "Availability held at 99.2% with 51.0 loss hours across 13 working days."
+    "text": "Availability held at 99.0% with 70.5 loss hours across 14 working days."
    },
    {
     "type": "positive",
     "title": "Right-first-time above target",
-    "text": "RFT reached 92.1% (292/317 batches) against a 90% target."
+    "text": "RFT reached 91.9% (308/335 batches) against a 90% target."
    },
    {
     "type": "positive",
     "title": "Topping within limit",
-    "text": "Topping was 3.86% (8,724 kg) against a 5% ceiling."
+    "text": "Topping was 3.61% (8,750 kg) against a 5% ceiling."
    },
    {
     "type": "warning",
     "title": "Redyeing above limit",
-    "text": "Redyeing was 1.28% (2,886 kg) vs a 1.0% limit."
+    "text": "Redyeing was 1.23% (2,886 kg) vs a 1.0% limit."
    },
    {
     "type": "info",
     "title": "Largest downtime driver",
-    "text": "Machine / Technical Failure accounted for 24.5 h (48.0% of recorded loss time)."
+    "text": "Machine / Technical Failure accounted for 32.0 h (45.4% of recorded loss time)."
    },
    {
     "type": "info",
@@ -32447,13 +32558,13 @@
    {
     "type": "warning",
     "title": "Output down month-on-month",
-    "text": "Production moved -48.8% versus Sep '26 (425,547 kg → 217,767 kg)."
+    "text": "Production moved -45.0% versus Sep '26 (425,547 kg → 233,860 kg)."
    }
   ]
  },
  "dataQuality": {
-  "dyeingRecords": 14570,
-  "dyeingDays": 186,
+  "dyeingRecords": 14645,
+  "dyeingDays": 187,
   "dyeingMachines": 21,
   "sampleMachines": 5,
   "blankRows": 0,
@@ -32500,8 +32611,8 @@
    },
    {
     "month": "Oct '26",
-    "records": 1053,
-    "days": 13
+    "records": 1128,
+    "days": 14
    }
   ],
   "finishingCoverage": [
@@ -32557,7 +32668,7 @@
   "Dyeing KPI are computed from the 'Production Report' sheet of DYEING PERFORMANCE OVERVIEW.xlsx.",
   "OEE = Availability x Performance x Quality. Availability = operating hours / working hours; Performance = production / loading capacity; Quality = quality-pass kg / planned kg.",
   "The 'Weighted' method aggregates plant totals before taking ratios (standard OEE practice). The 'Report' method averages row-level ratios and matches the monthly PowerPoint deck.",
-  "RFT is computed from the 'RFT Report' sheet; topping and redyeing percentages use planned output as the base.",
+  "RFT is computed from the 'RFT Report' sheet; topping percentages use planned output as the base and redyeing percentages use actual production as the base.",
   "Finishing KPI are computed from the 'Database' sheet of FINISHING PERFORMANCE OVERVIEW.xlsx.",
   "Sample dyeing machines (Mc-1, Mc-2, Mc-3, Mc-25, Mc-26) are excluded from machine rankings.",
   "Dashboard designed and developed by Ikramul Hasan Rakib, Executive, Central IE Department, Clifton Group. (c) 2026 Ikramul Hasan Rakib. All rights reserved. Proprietary license - see the LICENSE and NOTICE files in the project root."

@@ -580,8 +580,8 @@
       second.push("Right-first-time was <strong>" + n1(rft.rate) + "%</strong> across " + rft.total +
         " batches (" + rft.b2b.rate.toFixed(1) + "% bulk-to-bulk, " + rft.l2b.rate.toFixed(1) + "% lab-to-bulk)");
     }
-    second.push("topping finished at <strong>" + n2(m.toppingPct) + "%</strong> and redyeing at <strong>" +
-      n2(m.redyeingPct) + "%</strong> of planned output");
+    second.push("topping finished at <strong>" + n2(m.toppingPct) + "%</strong> of planned output and redyeing at <strong>" +
+      n2(m.redyeingPct) + "%</strong> of actual production");
     html += "<p>" + second.join(", while ") + ".</p>";
 
     if (fin && fin.oee != null) {
@@ -1448,7 +1448,7 @@
       ["OEE %", "Availability × Performance × Quality"],
       ["Right first time", "RFT-pass batches ÷ total batches (lab-to-bulk + bulk-to-bulk)"],
       ["Topping %", "Topping kg ÷ planned output"],
-      ["Redyeing %", "Redyeing kg ÷ planned output"],
+      ["Redyeing %", "Redyeing kg ÷ actual production"],
       ["Target hit rate", "Actual output ÷ monthly goal (468,000 kg)"],
       ["Finishing OEE", "Utilisation × Efficiency × Quality"],
       ["Finishing utilisation", "Running time ÷ target time"]
