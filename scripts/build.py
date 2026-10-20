@@ -437,7 +437,7 @@ def load_dyeing():
             "hitRate": safe_round(pct(a["production"], goal), 2),
             "capacityUtil": safe_round(pct(a["production"], a["loading_capacity"]), 2),
             "toppingPct": safe_round(pct(a["topping"], a["target"]), 2),
-            "redyeingPct": safe_round(pct(a["redyeing"], a["target"]), 2),
+            "redyeingPct": safe_round(pct(a["redyeing"], a["production"]), 2),
             "reworkPct": safe_round(pct(a["topping"] + a["redyeing"], a["target"]), 2),
             "goal": goal,
             "proratedGoal": safe_round(prorated_goal, 0),
@@ -1264,7 +1264,8 @@ def main():
             "Performance = production / loading capacity; Quality = quality-pass kg / planned kg.",
             "The 'Weighted' method aggregates plant totals before taking ratios (standard OEE practice). "
             "The 'Report' method averages row-level ratios and matches the monthly PowerPoint deck.",
-            "RFT is computed from the 'RFT Report' sheet; topping and redyeing percentages use planned output as the base.",
+            "RFT is computed from the 'RFT Report' sheet; topping percentages use planned output as the base "
+            "and redyeing percentages use actual production as the base.",
             "Finishing KPI are computed from the 'Database' sheet of FINISHING PERFORMANCE OVERVIEW.xlsx.",
             "Sample dyeing machines (Mc-1, Mc-2, Mc-3, Mc-25, Mc-26) are excluded from machine rankings.",
             "Dashboard designed and developed by Ikramul Hasan Rakib, Executive, Central IE Department, "
