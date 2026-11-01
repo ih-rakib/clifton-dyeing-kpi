@@ -472,7 +472,7 @@ def load_dyeing():
             "hitRate": safe_round(pct(a["production"], goal), 2),
             "capacityUtil": safe_round(pct(a["production"], a["loading_capacity"]), 2),
             "toppingPct": safe_round(pct(a["topping"], a["target"]), 2),
-            "redyeingPct": safe_round(pct(a["redyeing"], a["production"]), 2),
+            "redyeingPct": safe_round(pct(a["redyeing"], a["target"]), 2),
             "reworkPct": safe_round(pct(a["topping"] + a["redyeing"], a["target"]), 2),
             "goal": goal,
             "proratedGoal": safe_round(prorated_goal, 0),

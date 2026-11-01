@@ -1460,8 +1460,8 @@
       ["Quality %", "Σ quality-pass kg ÷ Σ planned output"],
       ["OEE %", "Availability × Performance × Quality"],
       ["Right first time", "RFT-pass batches ÷ total batches (lab-to-bulk + bulk-to-bulk)"],
-      ["Topping %", "Topping kg ÷ planned output"],
-      ["Redyeing %", "Redyeing kg ÷ actual production"],
+      ["Topping %", "Topping kg ÷ planned output (target)"],
+      ["Redyeing %", "Redyeing kg ÷ planned output (target)"],
       ["Target hit rate", "Actual output ÷ monthly goal (468,000 kg)"],
       ["Finishing OEE", "Utilisation × Efficiency × Quality"],
       ["Finishing utilisation", "Running time ÷ target time"]
@@ -1516,7 +1516,6 @@
       '<div class="def-row"><div class="k">Rebuild</div><div class="v"><code>python scripts/build.py</code> — re-reads both workbooks and rewrites the encrypted <code>dashboard/data/data.enc.js</code></div></div>' +
       '<div class="def-row"><div class="k">Data protection</div><div class="v">AES-256-GCM encrypted bundle, decrypted in the browser after sign-in. Plaintext data and the source workbooks are never published.</div></div>' +
       '<div class="def-row"><div class="k">Automatic refresh</div><div class="v">Run <code>python scripts/watch.py</code> (or <code>start_dashboard.bat</code>) to rebuild whenever an Excel file is saved</div></div>' +
-      '<div class="def-row"><div class="k">KPI method</div><div class="v">Toggle between <b>Weighted</b> (plant totals) and <b>Report</b> (row-average, matches the monthly deck) in the header</div></div>' +
       "</div>";
   }
 
