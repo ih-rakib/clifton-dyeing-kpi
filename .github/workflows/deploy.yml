@@ -1,10 +1,12 @@
 # Build & Deploy Dashboard
 #
-# Rebuilds the dashboard data bundle from the Excel workbooks and publishes
-# the site to GitHub Pages.
+# Publishes the committed, encrypted dashboard bundle to GitHub Pages.
+#
+# The data is built LOCALLY with `python scripts/build.py` (the source Excel
+# workbooks are not stored in this repository) and the encrypted output is
+# committed. This workflow therefore only verifies and deploys the site.
 #
 # Runs ONLY when you push to `main` (or when you click "Run workflow").
-# It does NOT run on a schedule and does NOT create GitHub Releases.
 #
 # (c) 2026 Ikramul Hasan Rakib - Executive, Central IE Department, Clifton Group
 
@@ -14,7 +16,6 @@ on:
   push:
     branches: [main]
     paths:
-      - "*.xlsx"
       - "scripts/**"
       - "dashboard/**"
       - "requirements.txt"
@@ -35,23 +36,27 @@ concurrency:
 
 jobs:
   build:
-    name: Build data & upload site
+    name: Verify encrypted site & upload
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Build dashboard data from the workbooks
-        run: python scripts/build.py
+      - name: Verify the bundle is encrypted and no plaintext data is published
+        run: |
+          set -e
+          test -s dashboard/data/data.enc.js
+          grep -q 'window.DASHBOARD_DATA_ENC' dashboard/data/data.enc.js
+          if grep -q 'window.DASHBOARD_DATA =' dashboard/data/data.enc.js; then
+            echo "::error::Plaintext data bundle detected. Run 'python scripts/build.py' locally and commit the encrypted output."
+            exit 1
+          fi
+          for f in dashboard/data/data.js dashboard/data/data.json; do
+            if [ -e "$f" ]; then
+              echo "::error::$f must not be published. Keep plaintext only in the git-ignored build/ folder."
+              exit 1
+            fi
+          done
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

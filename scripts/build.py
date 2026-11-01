@@ -22,14 +22,20 @@ run on any machine in the plant and inside GitHub Actions.
 
 Outputs
 -------
-dashboard/data/data.js     -> window.DASHBOARD_DATA = {...};   (works from file://)
-dashboard/data/data.json   -> same payload, for API / tooling use
+dashboard/data/data.enc.js -> window.DASHBOARD_DATA_ENC = {...};  (AES-256-GCM)
+build/data.json            -> plaintext copy for local tooling (git-ignored)
+
+The encryption password is read from CLIFTON_DATA_PASSWORD or from the
+git-ignored .data-password file and never written into the published site.
 """
 
 from __future__ import annotations
 
+import base64
+import hashlib
 import json
 import math
+import os
 import re
 import sys
 import traceback
@@ -42,10 +48,20 @@ try:
 except ImportError:  # pragma: no cover
     sys.exit("openpyxl is required.  Install with:  pip install -r requirements.txt")
 
+try:
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+except ImportError:  # pragma: no cover
+    AESGCM = None
+
 ROOT = Path(__file__).resolve().parent.parent
 DYEING_XLSX = ROOT / "DYEING PERFORMANCE OVERVIEW.xlsx"
 FINISHING_XLSX = ROOT / "FINISHING PERFORMANCE OVERVIEW.xlsx"
 OUT_DIR = ROOT / "dashboard" / "data"
+BUILD_DIR = ROOT / "build"
+PASSWORD_FILE = ROOT / ".data-password"
+ENC_FILE = OUT_DIR / "data.enc.js"
+PLAIN_JSON = BUILD_DIR / "data.json"
+PBKDF2_ITERATIONS = 250_000
 
 # --------------------------------------------------------------------------
 # Configuration - edit here to change targets / thresholds
@@ -219,6 +235,25 @@ def safe_round(v, nd=4):
     if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
         return None
     return round(v, nd)
+
+
+def data_password() -> str:
+    """Password used to encrypt the published data bundle.
+
+    Read from CLIFTON_DATA_PASSWORD, or from the git-ignored .data-password file
+    in the project root.  It is never written into the repository or the bundle.
+    """
+    password = os.environ.get("CLIFTON_DATA_PASSWORD")
+    if password is None and PASSWORD_FILE.exists():
+        password = PASSWORD_FILE.read_text(encoding="utf-8").strip("\r\n")
+    if not password:
+        sys.exit(
+            "Data password not configured.\n\n"
+            f"Create {PASSWORD_FILE.name} in the project root containing the dashboard\n"
+            "password on a single line, or set the CLIFTON_DATA_PASSWORD environment\n"
+            "variable. The file is git-ignored and must never be committed."
+        )
+    return password
 
 
 # --------------------------------------------------------------------------
@@ -1275,23 +1310,64 @@ def main():
     }
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    BUILD_DIR.mkdir(parents=True, exist_ok=True)
+
+    if AESGCM is None:
+        sys.exit(
+            "The 'cryptography' package is required to encrypt the data bundle.\n"
+            "Install it with:  pip install -r requirements.txt"
+        )
+
+    password = data_password()
+    plaintext = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+
+    salt = os.urandom(16)
+    iv = os.urandom(12)
+    key = hashlib.pbkdf2_hmac(
+        "sha256", password.encode("utf-8"), salt, PBKDF2_ITERATIONS, dklen=32
+    )
+    ciphertext = AESGCM(key).encrypt(iv, plaintext, None)
+
+    bundle = {
+        "v": 1,
+        "alg": "AES-256-GCM",
+        "kdf": "PBKDF2-HMAC-SHA256",
+        "iterations": PBKDF2_ITERATIONS,
+        "salt": base64.b64encode(salt).decode("ascii"),
+        "iv": base64.b64encode(iv).decode("ascii"),
+        "ct": base64.b64encode(ciphertext).decode("ascii"),
+    }
+
     banner = (
-        "/* Dyeing & Finishing Performance Dashboard - data bundle\n"
+        "/* Dyeing & Finishing Performance Dashboard - encrypted data bundle\n"
         "   Author : Ikramul Hasan Rakib\n"
         "            Executive, Central IE Department, Clifton Group\n"
         "   (c) 2026 Ikramul Hasan Rakib. All rights reserved.\n"
         "   Proprietary license - see LICENSE and NOTICE in the project root.\n"
-        "   Generated automatically by scripts/build.py - do not edit by hand. */\n"
+        "   AES-256-GCM encrypted. Generated automatically by scripts/build.py.\n"
+        "   Do not edit by hand; the password is not stored in this repository. */\n"
     )
-    js = banner + "window.DASHBOARD_DATA = " + json.dumps(payload, ensure_ascii=True, separators=(",", ":")) + ";\n"
-    (OUT_DIR / "data.js").write_text(js, encoding="utf-8")
-    (OUT_DIR / "data.json").write_text(
-        json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8"
-    )
+    js = banner + "window.DASHBOARD_DATA_ENC = " + json.dumps(bundle, separators=(",", ":")) + ";\n"
+    ENC_FILE.write_text(js, encoding="utf-8")
 
-    size_kb = (OUT_DIR / "data.js").stat().st_size / 1024
-    print(f"\nWrote dashboard/data/data.js  ({size_kb:,.0f} KB)")
-    print(f"Wrote dashboard/data/data.json")
+    # Plaintext copy stays outside dashboard/ (git-ignored) for local tooling only.
+    PLAIN_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # Remove plaintext bundles produced by older versions of this script.
+    for stale in (OUT_DIR / "data.js", OUT_DIR / "data.json"):
+        try:
+            stale.unlink()
+        except FileNotFoundError:
+            pass
+
+    size_kb = ENC_FILE.stat().st_size / 1024
+    plain_kb = PLAIN_JSON.stat().st_size / 1024
+    print(f"\nWrote dashboard/data/data.enc.js  ({size_kb:,.0f} KB, AES-256-GCM)")
+    print(f"Wrote build/data.json  ({plain_kb:,.0f} KB, local plaintext - git-ignored)")
+    print(f"PBKDF2 iterations: {PBKDF2_ITERATIONS:,}")
+    if len(password) < 12:
+        print("WARNING: the data password is shorter than 12 characters; a longer")
+        print("         passphrase makes the published ciphertext much harder to crack.")
     print(f"Latest month: {payload['meta']['latestMonth']}  |  latest complete: {payload['meta']['latestCompleteMonth']}")
     print("Done.")
 

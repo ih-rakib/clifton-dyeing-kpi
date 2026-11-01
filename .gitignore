@@ -20,6 +20,17 @@ env/
 update.bat
 logout.bat
 
+# Local encryption password for the published data bundle - NEVER commit
+.data-password
+
+# Plaintext data and build artefacts - never publish
+build/
+dashboard/data/data.json
+dashboard/data/data.js
+
+# Source workbooks stay on this PC; only the encrypted bundle is published
+*.xlsx
+
 # OS / editor
 Thumbs.db
 Desktop.ini

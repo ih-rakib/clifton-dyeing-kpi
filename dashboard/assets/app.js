@@ -1500,7 +1500,8 @@
       '<div class="def-row"><div class="k">License</div><div class="v">Proprietary &mdash; All rights reserved (see <code>LICENSE</code> / <code>NOTICE</code>)</div></div>' +
       '<div class="def-row"><div class="k">Source workbooks</div><div class="v">' + D.meta.sourceFiles.map(esc).join(" · ") + "</div></div>" +
       '<div class="def-row"><div class="k">Last build</div><div class="v">' + esc(D.meta.generatedAt) + "</div></div>" +
-      '<div class="def-row"><div class="k">Rebuild</div><div class="v"><code>python scripts/build.py</code> — re-reads both workbooks and rewrites <code>dashboard/data/data.js</code></div></div>' +
+      '<div class="def-row"><div class="k">Rebuild</div><div class="v"><code>python scripts/build.py</code> — re-reads both workbooks and rewrites the encrypted <code>dashboard/data/data.enc.js</code></div></div>' +
+      '<div class="def-row"><div class="k">Data protection</div><div class="v">AES-256-GCM encrypted bundle, decrypted in the browser after sign-in. Plaintext data and the source workbooks are never published.</div></div>' +
       '<div class="def-row"><div class="k">Automatic refresh</div><div class="v">Run <code>python scripts/watch.py</code> (or <code>start_dashboard.bat</code>) to rebuild whenever an Excel file is saved</div></div>' +
       '<div class="def-row"><div class="k">KPI method</div><div class="v">Toggle between <b>Weighted</b> (plant totals) and <b>Report</b> (row-average, matches the monthly deck) in the header</div></div>' +
       "</div>";
