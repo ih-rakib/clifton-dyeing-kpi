@@ -26,10 +26,13 @@
   var NF0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
   var NF1 = new Intl.NumberFormat("en-US", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   var NF2 = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  var NF02 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
 
   function kg(v) { return v == null ? "—" : NF0.format(v); }
   function n1(v) { return v == null ? "—" : NF1.format(v); }
   function n2(v) { return v == null ? "—" : NF2.format(v); }
+  function n2max(v) { return v == null ? "—" : NF02.format(v); }
+  function round2(v) { return v == null ? null : Math.round(v * 100) / 100; }
   function pc(v, d) { return v == null ? "—" : (d === 2 ? NF2.format(v) : NF1.format(v)) + "%"; }
   function compact(v) {
     if (v == null) return "—";
@@ -835,11 +838,21 @@
     var roll = vals.map(function (_, i) {
       var a = Math.max(0, i - 6);
       var s = vals.slice(a, i + 1).filter(function (v) { return v != null; });
-      return s.length ? sum(s) / s.length : null;
+      return s.length ? round2(sum(s) / s.length) : null;
     });
     $("#dy-daily-pill").textContent = days.length + " days · avg " + kg(days.length ? sum(vals) / days.length : null) + " kg";
     draw("dy-daily", baseOption({
-      tooltip: tooltipAxis(),
+      tooltip: tooltipAxis({
+        formatter: function (params) {
+          if (!params || !params.length) return "";
+          var out = "<b>" + params[0].axisValue + "</b>";
+          params.forEach(function (p) {
+            if (p.value == null) return;
+            out += "<br/>" + p.marker + " " + p.seriesName + " <b>" + n2max(p.value) + "</b> kg";
+          });
+          return out;
+        }
+      }),
       legend: { top: 0, right: 6, icon: "roundRect", itemWidth: 9, itemHeight: 9, itemGap: 12, textStyle: { color: T().text2, fontSize: 10.5 } },
       xAxis: axisX({ type: "category", data: labels, boundaryGap: false }),
       yAxis: axisY({ type: "value", axisLabel: { color: T().text3, fontSize: 10.2, formatter: function (v) { return compact(v); } } }),
