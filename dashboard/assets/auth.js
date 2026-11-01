@@ -169,6 +169,13 @@
   /* Start-up                                                            */
   /* ------------------------------------------------------------------ */
   function init() {
+    // Defensive: never leave credentials in the address bar or browser history.
+    try {
+      if (/(?:password|pass|username|user)=/i.test(window.location.search)) {
+        window.history.replaceState(null, "", window.location.pathname + window.location.hash);
+      }
+    } catch (e) { /* file:// or restricted history - ignore */ }
+
     var gate = document.getElementById("login");
     var form = document.getElementById("loginForm");
     var userInput = document.getElementById("loginUser");
