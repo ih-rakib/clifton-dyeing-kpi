@@ -28,6 +28,23 @@ dashboard/data/data.json   # same payload, for tooling / APIs
 
 ---
 
+## Access
+
+The dashboard opens on a sign-in screen. The credentials are currently **hard-coded**
+in [`dashboard/assets/auth.js`](dashboard/assets/auth.js) (the `CREDENTIALS` object at
+the top of the file) — change them there when required.
+
+A successful sign-in is remembered for the browser tab (12-hour session); the
+**sign-out** button in the top bar clears it.
+
+> **Important:** this is a client-side gate for a static site. It keeps casual
+> visitors out of the interface, but it cannot make the data confidential — anyone
+> who knows the URL of `dashboard/data/data.js` or `data.json` can still download
+> the underlying figures. Use real server-side authentication (and keep the data
+> private) if the numbers must be protected.
+
+---
+
 ## Run it locally
 
 ```bash
@@ -96,6 +113,7 @@ the site.
 dashboard/            the published website (site root)
   index.html            entry point
   assets/app.js         application layer (renders every tab / chart)
+  assets/auth.js        hard-coded sign-in gate
   assets/styles.css     design system
   assets/vendor/        Apache ECharts
   data/data.js|json     generated data bundle  (do not edit by hand)

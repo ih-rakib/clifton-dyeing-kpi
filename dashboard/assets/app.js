@@ -1435,7 +1435,7 @@
   function renderData() {
     var q = D.dataQuality;
     renderKpis($("#dq-kpis"), [
-      { label: "Dyeing records", value: NF0.format(q.dyeingRecords), unit: "", status: "neutral", badge: q.dyeingDays + " days", sub: q.dateMin + " → " + q.dateMax, bar: null, spark: null },
+      { label: "Dyeing records", value: NF0.format(q.dyeingRecords), unit: "", status: "neutral", badge: q.dyeingDays + " days", sub: D.meta.dateMin + " → " + D.meta.dateMax, bar: null, spark: null },
       { label: "Dyeing machines", value: String(q.dyeingMachines), unit: "", status: "neutral", badge: q.sampleMachines + " sample", sub: "Bulk machines included in KPI", bar: null, spark: null },
       { label: "Finishing records", value: NF0.format(q.finishingRecords), unit: "", status: "neutral", badge: q.finishingDays + " days", sub: q.finishingMachines + " machines", bar: null, spark: null }
     ]);
